@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "Inika";
+  src: url("/public/assets/fonts/Inika-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Inika";
+  src: url("/public/assets/fonts/Inika-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Kodchasan";
+  src: url("/public/assets/fonts/Kodchasan-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Kodchasan";
+  src: url("/public/assets/fonts/Kodchasan-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+html {
+  margin: 0;
+  font-family: "Inika", serif;
+}
+h1,
+h2,
+h3,
+h4,
+button {
+  font-family: "Kodchasan";
+  text-align: center;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 26px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 20px;
+}
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  height: 50px;
+  background-color: #00ad6e;
+  justify-content: space-around;
+  align-items: center;
+}
+.header_img {
+  height: 50px;
+}
+button {
+  font-size: 18px;
+}
+#portada {
+  font-size: 16px;
+  min-height: 135px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("/public/assets/imgs/fondo_padel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#portada::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: white;
+  opacity: 75%;
+}
+#portada p {
+  margin: 0 16px 0 16px;
+}
+#socios_btn {
+  margin: 16px 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#socios_btn button {
+  min-height: 44px;
+  min-width: 42vw;
+  border-radius: 25px;
+  border: none;
+  background-color: #6bc9f3;
+}
+#home_socios h3 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.banner {
+  display: flex;
+  justify-content: right;
+  min-height: 145px;
+  background-image: url("/public/assets/imgs/padel_miembro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.sub_banner {
+  width: 50vw;
+  font-size: 14px;
+  background-color: rgba(237, 237, 237, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sub_banner p,
+.sub_banner ul {
+  margin: 0;
+}
+#home_ultimos_eventos h2{
+background-color: #EDEDED;
+padding: 5px;
+}
+#home_ultimos_eventos > p{
+text-align: justify;
+margin: 16px;
+}
+#eventos_banner{
+    justify-content: left;
+    background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
+}
+.recogida_popular{
+    font-family: "Inika";
+    font-size: 18px;
+    font-weight: 100;
+    margin: 5px 0 0 0;
+}
+#eventos_texto_banner p{
+    margin: 5px 10px;
+}
