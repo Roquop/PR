@@ -38,6 +38,7 @@ h4,
 button {
   font-family: "Kodchasan";
   text-align: center;
+  border: none;
 }
 h1 {
   font-size: 32px;
@@ -66,6 +67,10 @@ header {
 }
 button {
   font-size: 18px;
+  min-height: 44px;
+}
+p {
+  margin: 0 16px;
 }
 #portada {
   font-size: 16px;
@@ -88,9 +93,6 @@ button {
   background-color: white;
   opacity: 75%;
 }
-#portada p {
-  margin: 0 16px;
-}
 .dos_botones {
   margin: 16px 16px;
   display: flex;
@@ -98,10 +100,8 @@ button {
   justify-content: space-between;
 }
 .dos_botones button {
-  min-height: 44px;
   min-width: 40vw;
   border-radius: 25px;
-  border: none;
   background-color: #6bc9f3;
 }
 #home_socios h3 {
@@ -116,7 +116,6 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 .sub_banner {
   width: 50vw;
@@ -130,49 +129,111 @@ button {
 .sub_banner ul {
   margin: 0;
 }
-#home_ultimos_eventos h2{
-background-color: #EDEDED;
-padding: 5px;
+#home_ultimos_eventos h2 {
+  background-color: #ededed;
+  padding: 5px;
 }
-#home_ultimos_eventos > p{
-text-align: justify;
-margin: 16px;
+#home_ultimos_eventos > p {
+  text-align: justify;
+  margin: 16px;
 }
-#eventos_banner{
-    justify-content: left;
-    background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
+#eventos_banner {
+  justify-content: left;
+  background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
 }
-.titulo_mini{
-    font-family: "Inika";
-    font-size: 18px;
-    font-weight: 100;
-    margin: 5px 0 0 0;
+.titulo_mini {
+  font-family: "Inika";
+  font-size: 18px;
+  font-weight: 100;
+  margin: 5px 0 0 0;
 }
-#eventos_texto_banner p{
-    margin: 5px 10px;
+#eventos_texto_banner p {
+  margin: 5px 10px;
 }
-#home_tienda{
-    border: 4px solid #00AD6E;
+#home_tienda {
+  border: 4px solid #00ad6e;
+  margin: 16px;
+}
+#home_tienda h2 {
+  margin: 0 5px;
+  text-align: left;
+}
+#home_tienda p {
+  margin: 0 5px;
+}
+#banner_home_tienda {
+  justify-content: left;
+  background-image: url("/public//assets/imgs/pelotas.jpg");
+}
+#banner_texto_home_tienda {
+  justify-content: start;
+}
+#banner_texto_home_tienda h4 {
+  text-align: left;
+  margin: 5px;
+}
+#home_club h3,
+#home_blog h3 {
+  text-align: left;
+  margin: 5px 16px;
+}
+#botones_dedo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px;
+  gap: 12px;
+}
+#botones_dedo button {
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7a416;
+  min-height: 44px;
+}
+#home_blog {
+  background-color: #ededed;
+}
+#home_blog h3 {
+  margin-top: 25px;
+}
+#home_blog h4 {
+  text-align: left;
+}
+#home_blog > div {
+  background-image: none;
+}
+
+#home_blog_img {
+  width: 50vw;
+  margin: 10px;
+  background-image: url("/public/assets/imgs/jugadora_padel.jpg");
+  background-size: 250%;
+  background-position: top center;
+}
+.contactanos-btn{
+    text-align: center;
+    margin: 20px 16px;
+}
+#contactanos{
+    min-width: 100%;
+    border-radius: 25px;
+    background-color: #F7A416;
+}
+footer{
+  background-color: #1D1D1B;  
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+#links{
     margin: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-#home_tienda h2{
-    margin: 0 5px;
-    text-align: left;
-}
-#home_tienda p{
-    margin: 0 5px;
-}
-#banner_home_tienda{
-    justify-content: left;
-    background-image: url("/public//assets/imgs/pelotas.jpg");
-}
-#banner_texto_home_tienda{
-    justify-content: start;
-}
-#banner_texto_home_tienda h4{
-    text-align: left;
-    margin: 5px;
-}
-#home_club h3{
-    text-align: left;
+footer :last-child{
+    margin-bottom: 16px;
 }

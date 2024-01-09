@@ -11,7 +11,7 @@
 <body>
     <header>
         <img class="header_img" src="/public/assets/imgs/logotipo_negro.svg" alt="">
-        <img src="/public/assets/icons/Shopping Basket.svg" alt="">
+        <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
         <img src="/public/assets/icons/Customer.svg" alt="">
         <img src="/public/assets/icons/Menu.svg" alt="">
     </header>
@@ -58,35 +58,42 @@
             <div id="banner_home_tienda" class="banner">
                 <div id="banner_texto_home_tienda" class="sub_banner">
                     <h4 class="titulo_mini">Último Producto a la venta</h4>
-                    <p>Pack: 3 Pelotas 8€</p>
+                    <p>Pack: 3 Pelotas</p>
+                    <p>
+                        8€
+                    </p>
                 </div>
             </div>
         </section>
-        <section id="reserva_clases" class="dos_botones">
+        <div id="reserva_clases" class="dos_botones">
             <button>Reserva Pista</button>
             <button>Clases</button>
-        </section>
+        </div>
         <section id="home_club">
             <h3>El Club</h3>
-            <button>
-                <p>La asociación</p><img src="/public/assets/icons/HandCursor.svg" alt="">
-            </button>
-            <button>
-                <p>Compromiso medioambiental</p><img src="/public/assets/icons/HandCursor.svg" alt="">
-            </button>
+            <div id="botones_dedo">
+                <button>
+                    La asociación<img src="/public/assets/icons/HandCursor.svg" alt="">
+                </button>
+                <button>
+                    Compromiso medioambiental<img src="/public/assets/icons/HandCursor.svg" alt="">
+                </button>
+            </div>
         </section>
         <section id="home_blog">
             <h3>Blog</h3>
             <p>¡Entérate de todo en nuestro blog!</p>
-            <div>
+            <div class="banner">
                 <div id="home_blog_img"></div>
-                <div class="home_blog_texto">
-                    <h4>¡Siguen llegando miembros!</h4>
+                <div id="home_blog_texto" class="sub_banner">
+                    <h4 class="titulo_mini">¡Siguen llegando miembros!</h4>
                     <p>Este mes se han incorporado 2 nuevos miembros a nuestro club así...</p>
                 </div>
             </div>
         </section>
-        <button>Contáctanos</button>
+        <div class="contactanos-btn">
+            <button id="contactanos">Contáctanos</button>
+        </div>
     </main>
     <footer>
         <div id="links">
@@ -96,7 +103,8 @@
             <img src="/public/assets/icons/Facebook.png" alt="">
         </div>
         <p>Política legal</p>
-        <p>Datos contacto</p>
+        <p>971396338 - EivissaPadel SL</p>
+        <p>Todos los derechos reservado ©️</p>
     </footer>
 </body>
 
