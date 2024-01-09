@@ -89,17 +89,17 @@ button {
   opacity: 75%;
 }
 #portada p {
-  margin: 0 16px 0 16px;
+  margin: 0 16px;
 }
-#socios_btn {
-  margin: 16px 0 16px 0;
+.dos_botones {
+  margin: 16px 16px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-#socios_btn button {
+.dos_botones button {
   min-height: 44px;
-  min-width: 42vw;
+  min-width: 40vw;
   border-radius: 25px;
   border: none;
   background-color: #6bc9f3;
@@ -115,6 +115,8 @@ button {
   background-image: url("/public/assets/imgs/padel_miembro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+
 }
 .sub_banner {
   width: 50vw;
@@ -140,7 +142,7 @@ margin: 16px;
     justify-content: left;
     background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
 }
-.recogida_popular{
+.titulo_mini{
     font-family: "Inika";
     font-size: 18px;
     font-weight: 100;
@@ -148,4 +150,29 @@ margin: 16px;
 }
 #eventos_texto_banner p{
     margin: 5px 10px;
+}
+#home_tienda{
+    border: 4px solid #00AD6E;
+    margin: 16px;
+}
+#home_tienda h2{
+    margin: 0 5px;
+    text-align: left;
+}
+#home_tienda p{
+    margin: 0 5px;
+}
+#banner_home_tienda{
+    justify-content: left;
+    background-image: url("/public//assets/imgs/pelotas.jpg");
+}
+#banner_texto_home_tienda{
+    justify-content: start;
+}
+#banner_texto_home_tienda h4{
+    text-align: left;
+    margin: 5px;
+}
+#home_club h3{
+    text-align: left;
 }
