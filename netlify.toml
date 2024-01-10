@@ -1,0 +1,8 @@
+7[build]
+  base = "PR"
+  publish = "PR"
+
+[[redirects]]
+  from = "/*"
+  to = "/:splat"
+  status = 200
