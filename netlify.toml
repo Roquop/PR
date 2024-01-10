@@ -1,5 +1,5 @@
 [build]
-  base = "PR"
+  base = ""
   publish = "PR"
 
 [[redirects]]
