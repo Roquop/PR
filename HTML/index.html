@@ -121,10 +121,12 @@
             <div class="banner_desktop">
                 <div id="banner_home_tienda" class="banner banner_three">
                     <div class="sub_banner sub_banner_three">
-                        <h4 class="titulo_mini">Pack de 3 pelotas</h4>
+                        <h4 class="desktop_hide titulo_mini">Último producto a la venta</h4>
+                        <h4 class="titulo_mini desktop_show">Pack de 3 pelotas</h4>
+                        <p class="desktop_hide">Pack: 3 pelotas</p>
                         <p>8€</p>
                         <br>
-                        <p>
+                        <p class="desktop_show">
                             Este conjunto clásico de 3 pelotas ha sido usado tan solo dos veces, la persona propietaria
                             se lesionó y quiere venderlas antes de dejar que se malogren y así saber que alguien las
                             disfrutará en su lugar.
@@ -164,7 +166,7 @@
             <button>Clases</button>
         </div>
         <section id="home_club">
-            <h3>El Club</h3>
+            <h2>El Club</h2>
             <div id="botones_dedo">
                 <div class="imagen_club desktop_show">
                 </div>
@@ -177,13 +179,29 @@
             </div>
         </section>
         <section id="home_blog">
-            <h3>Blog</h3>
+            <h2>Blog</h2>
             <p>¡Entérate de todo en nuestro blog!</p>
-            <div class="banner">
-                <div id="home_blog_img"></div>
-                <div id="home_blog_texto" class="sub_banner">
-                    <h4 class="titulo_mini">¡Siguen llegando miembros!</h4>
-                    <p>Este mes se han incorporado 2 nuevos miembros a nuestro club así...</p>
+            <div class="banner_desktop">
+                <div class="banner banner_three">
+                    <div class="home_blog_img"></div>
+                    <div class="home_blog_texto sub_banner sub_banner_three">
+                        <p>¡Siguen llegando miembros!</p>
+                        <p>Este mes se han incorporado 2 nuevos miembros a nuestro club así que ya somos más de 100 los
+                            que formamos equipo en nuestra comunidad. Ha sido un camino largo y aunque no ha estado
+                            exento de dificultades, la ilusión y las ganas con los que participan todos nuestros
+                            integrantes hacen que cualquier bache en el camino...</p>
+                    </div>
+                </div>
+                <div class="banner banner_three desktop_show">
+                    <div class="home_blog_img"></div>
+                    <div class="home_blog_texto sub_banner sub_banner_three">
+                        <p>¡Éxito en el PadelFest!
+                        <p>
+                        <p>El pasado mes de Octubre se celebró en el club el PadelFest, donde los participantes pudieron
+                            pagar por un menú y parte de la recaudación iría destinada a instalar una máquina de ósmosis
+                            y alto filtrado en las duchas del club, con lo cual se podrá reducir el nivel de cal y por
+                            lo tanto alargar considerablemente la vida de las tuberías, que ya...</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -198,9 +216,15 @@
             <img src="/public/assets/icons/TwitterX.png" alt="">
             <img src="/public/assets/icons/Facebook.png" alt="">
         </div>
-        <p>Política legal</p>
-        <p>971396338 - EivissaPadel SL</p>
-        <p>Todos los derechos reservado ©️</p>
+        <div class="footer_desktop">
+            <div>
+                <p>Política legal</p>
+            </div>
+            <div>
+                <p>971396338 - EivissaPadel SL</p>
+                <p>Todos los derechos reservado ©️</p>
+            </div>
+        </div>
     </footer>
 </body>
 

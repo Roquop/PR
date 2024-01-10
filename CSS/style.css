@@ -30,7 +30,22 @@
 html {
   margin: 0;
   font-family: "Inika", serif;
+  /* width: 1200px; */
+  /* margin-left: calc(50vw - 600px); */
+  /* background-image: url("/public/assets/imgs/pelota_evento_uno.jpg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(-50vw + 600px); */
 }
+/* html::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+  position: absolute;
+  background-color: white;
+} */
 h1,
 h2,
 h3,
@@ -121,7 +136,7 @@ footer :last-child {
   gap: 16px;
 }
 .dos_botones button {
-  min-width: calc(50vw - 32px);
+  min-width: calc(50% - 32px);
   border-radius: 25px;
   background-color: #6bc9f3;
 }
@@ -176,7 +191,8 @@ footer :last-child {
   font-family: "Inika";
   font-size: 18px;
   font-weight: 100;
-  margin: 5px 0 0 0;
+  margin: 10px;
+  text-align: left;
 }
 .eventos_texto_banner p {
   margin: 5px 10px;
@@ -237,7 +253,10 @@ footer :last-child {
 #home_blog > div {
   background-image: none;
 }
-#home_blog_img {
+#home_blog .banner {
+  background-image: none;
+}
+.home_blog_img {
   width: 50vw;
   margin: 10px;
   background-image: url("/public/assets/imgs/jugadora_padel.jpg");
@@ -254,6 +273,9 @@ footer :last-child {
   background-color: #f7a416;
 }
 .desktop_show {
+  display: none;
+}
+.sub_banner .desktop_show{
   display: none;
 }
 /* GLOBAL DESKTOP */
@@ -489,23 +511,63 @@ footer :last-child {
     background-position: 75%;
     background-repeat: no-repeat;
   }
-  #botones_dedo{
+  /* EL CLUB */
+  #home_club h2 {
+    text-align: left;
+    margin: 20px;
+  }
+  #botones_dedo {
     flex-direction: row;
     justify-content: space-around;
   }
-  #botones_dedo button, .imagen_club{
+  #botones_dedo button,
+  .imagen_club {
     width: 33%;
     min-height: 250px;
     font-size: 20px;
     justify-content: center;
     text-align: center;
   }
-  #botones_dedo button img{
+  #botones_dedo button img {
     width: 95px;
   }
-  .imagen_club{
+  .imagen_club {
     background-image: url("/public/assets/imgs/el_club_desktop.jpg");
     background-size: cover;
     background-position: top;
+  }
+  /* EL BLOG */
+  #home_blog h2 {
+    text-align: left;
+    margin: 20px;
+  }
+  #home_blog .banner_desktop {
+    width: 100%;
+  }
+  .banner_three p:nth-child(1) {
+    font-size: 18px;
+  }
+  #home_blog .banner {
+    background-image: none;
+  }
+  #home_blog .desktop_show {
+    display: flex;
+  }
+  .home_blog_img {
+    width: 50%;
+    margin: 0 20px;
+  }
+  .home_blog_texto {
+    margin: 0 20px 0 0;
+  }
+  footer img{
+    width: 100px;
+  }
+  .footer_desktop{
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer_desktop p{
+    margin: 0;
   }
 }
