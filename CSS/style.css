@@ -147,6 +147,14 @@ footer :last-child {
   flex-direction: column;
   justify-content: center;
 }
+.sub_banner_three p {
+  display: -webkit-box;
+  text-align: justify;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 .sub_banner p,
 .sub_banner ul {
   margin: 0;
@@ -259,7 +267,7 @@ footer :last-child {
   h1,
   h2,
   h3,
-  h4{
+  h4 {
     font-size: 64px;
   }
   h2 {
@@ -274,7 +282,6 @@ footer :last-child {
   }
   button {
     font-size: 20px;
-    min-height: 44px;
   }
   p {
     font-size: 18px;
@@ -357,6 +364,7 @@ footer :last-child {
 }
 /* HOME DESKTOP */
 @media (min-width: 768px) {
+  /* SOCIOS */
   #home_socios > p {
     text-align: center;
   }
@@ -371,37 +379,39 @@ footer :last-child {
   #home_socios .banner p {
     margin: 20px;
   }
+  /* ULTIMOS EVENTOS */
   #home_ultimos_eventos {
     overflow: hidden;
   }
-  #home_ultimos_eventos .banner_desktop {
+  .banner_desktop {
     width: 120%;
     display: flex;
+    gap: 20px;
   }
-  #home_ultimos_eventos .banner {
+  .banner_three {
     justify-content: right;
-    width: 40%;
+    min-width: 33%;
     height: 250px;
   }
-  #home_ultimos_eventos .banner p {
+  .banner_three p {
     font-size: 16px;
   }
-  #home_ultimos_eventos .banner h4 {
+  .banner_three h4 {
     font-size: 24px;
     font-family: "Kodchasan";
     text-align: left;
     margin: 0 10px;
   }
-  #home_ultimos_eventos .sub_banner {
+  .sub_banner_three {
     width: 50%;
     justify-content: start;
     overflow: hidden;
     height: 250px;
   }
-  #home_ultimos_eventos .sub_banner p {
+  .sub_banner_three p {
     display: -webkit-box;
     text-align: justify;
-    -webkit-line-clamp: 8; /* Número máximo de líneas a mostrar */
+    -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -415,5 +425,87 @@ footer :last-child {
   .banner_desktop .banner:nth-child(3) {
     background-image: url("/public/assets/imgs/evento_4.jpg");
     background-position: right;
+  }
+  /* LA TIENDA */
+  #home_tienda h3,
+  #home_tienda h2,
+  #home_tienda p {
+    text-align: left;
+    margin: 0 16px;
+  }
+  #home_tienda {
+    overflow: hidden;
+  }
+  #home_tienda .banner {
+    justify-content: right;
+    background-position: center;
+    display: flex;
+  }
+  .banner_three {
+    margin: 10px 0 20px 0;
+  }
+  #home_tienda .banner_three p {
+    -webkit-line-clamp: 7;
+  }
+  #home_tienda .banner:nth-child(1)::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/public/assets/imgs/pelotas.jpg");
+    background-size: cover;
+    background-position: 75%;
+    background-repeat: no-repeat;
+  }
+  #home_tienda .banner:nth-child(2) {
+    background-image: url("/public/assets/imgs/padel_pala_2.jpg");
+  }
+  #home_tienda .banner:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/public/assets/imgs/padel_pala_2.jpg");
+    background-size: cover;
+    background-position: 75%;
+    background-repeat: no-repeat;
+  }
+  #home_tienda .banner:nth-child(3) {
+    background-image: url("/public/assets/imgs/camiseta.jpg");
+  }
+  #home_tienda .banner:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url("/public/assets/imgs/camiseta.jpg");
+    background-size: cover;
+    background-position: 75%;
+    background-repeat: no-repeat;
+  }
+  #botones_dedo{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #botones_dedo button, .imagen_club{
+    width: 33%;
+    min-height: 250px;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+  #botones_dedo button img{
+    width: 95px;
+  }
+  .imagen_club{
+    background-image: url("/public/assets/imgs/el_club_desktop.jpg");
+    background-size: cover;
+    background-position: top;
   }
 }
