@@ -98,9 +98,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap:16px;
 }
 .dos_botones button {
-  min-width: 40vw;
+  min-width: calc(50vw - 32px);
   border-radius: 25px;
   background-color: #6bc9f3;
 }
