@@ -22,7 +22,7 @@
   font-style: normal;
   font-weight: bold;
 }
-
+/* GLOBAL */
 * {
   box-sizing: border-box;
   position: relative;
@@ -55,6 +55,14 @@ h4 {
 body {
   margin: 0;
 }
+button {
+  font-size: 18px;
+  min-height: 44px;
+}
+p {
+  margin: 0 16px;
+}
+/* HEADER */
 header {
   display: flex;
   height: 50px;
@@ -65,13 +73,25 @@ header {
 .header_img {
   height: 50px;
 }
-button {
-  font-size: 18px;
-  min-height: 44px;
+/* FOOTER */
+footer {
+  background-color: #1d1d1b;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
 }
-p {
-  margin: 0 16px;
+#links {
+  margin: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+footer :last-child {
+  margin-bottom: 16px;
+}
+/* HOME */
 #portada {
   font-size: 16px;
   min-height: 135px;
@@ -98,13 +118,14 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:16px;
+  gap: 16px;
 }
 .dos_botones button {
   min-width: calc(50vw - 32px);
   border-radius: 25px;
   background-color: #6bc9f3;
 }
+/* HOME SOCIOS */
 #home_socios h3 {
   text-align: center;
   margin-bottom: 5px;
@@ -130,6 +151,7 @@ p {
 .sub_banner ul {
   margin: 0;
 }
+/* HOME ULTIMOS EVENTOS */
 #home_ultimos_eventos h2 {
   background-color: #ededed;
   padding: 5px;
@@ -138,7 +160,7 @@ p {
   text-align: justify;
   margin: 16px;
 }
-#eventos_banner {
+.eventos_banner {
   justify-content: left;
   background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
 }
@@ -148,9 +170,10 @@ p {
   font-weight: 100;
   margin: 5px 0 0 0;
 }
-#eventos_texto_banner p {
+.eventos_texto_banner p {
   margin: 5px 10px;
 }
+/* HOME TIENDA */
 #home_tienda {
   border: 4px solid #00ad6e;
   margin: 16px;
@@ -173,6 +196,7 @@ p {
   text-align: left;
   margin: 5px;
 }
+/* HOME CLUB */
 #home_club h3,
 #home_blog h3 {
   text-align: left;
@@ -192,6 +216,7 @@ p {
   background-color: #f7a416;
   min-height: 44px;
 }
+/* HOME BLOG */
 #home_blog {
   background-color: #ededed;
 }
@@ -204,7 +229,6 @@ p {
 #home_blog > div {
   background-image: none;
 }
-
 #home_blog_img {
   width: 50vw;
   margin: 10px;
@@ -212,29 +236,183 @@ p {
   background-size: 250%;
   background-position: top center;
 }
-.contactanos-btn{
-    text-align: center;
-    margin: 20px 16px;
-}
-#contactanos{
-    min-width: 100%;
-    border-radius: 25px;
-    background-color: #F7A416;
-}
-footer{
-  background-color: #1D1D1B;  
-  color: white;
+.contactanos-btn {
   text-align: center;
-  font-size: 14px;
-  display: flex;
-  flex-direction: column;
+  margin: 20px 16px;
 }
-#links{
-    margin: 16px;
+.orange_btn {
+  min-width: 100%;
+  border-radius: 25px;
+  background-color: #f7a416;
+}
+.desktop_show {
+  display: none;
+}
+/* GLOBAL DESKTOP */
+@media (min-width: 768px) {
+  .desktop_show {
+    display: block;
+  }
+  .desktop_hide {
+    display: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4{
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  button {
+    font-size: 20px;
+    min-height: 44px;
+  }
+  p {
+    font-size: 18px;
+    margin: 20px;
+  }
+  /* HEADER */
+  header {
+    min-height: 70px;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .header_img {
+    min-height: 70px;
+  }
+  header img {
+    height: 35px;
+  }
+  #desktop_menu {
+    width: 75%;
     display: flex;
-    justify-content: space-around;
+    justify-content: right;
+    gap: 25px;
     align-items: center;
+  }
+  #desktop_menu button {
+    min-width: 250px;
+  }
+  #boton_identificate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+  }
+  #boton_identificate::before {
+    content: "";
+    top: 0;
+    left: 0;
+    border: 3px solid black;
+    width: 100%;
+    height: 85%;
+    position: absolute;
+  }
+  #boton_identificate img {
+    margin: 0 0 -4px 0;
+    height: 45px;
+  }
+  /* PORTADA */
+  #portada {
+    min-height: 356px;
+    display: flex;
+    align-items: end;
+  }
+  #portada::before {
+    opacity: 0%;
+  }
+  nav {
+    width: 100%;
+    justify-content: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    margin: 16px;
+  }
+  nav ul li {
+    min-height: 60px;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 7);
+  }
+  .banner {
+    min-height: 250px;
+    background-position-y: 30%;
+    margin: 16px;
+  }
 }
-footer :last-child{
-    margin-bottom: 16px;
+/* HOME DESKTOP */
+@media (min-width: 768px) {
+  #home_socios > p {
+    text-align: center;
+  }
+  #miembro_texto_banner {
+    justify-content: space-around;
+    width: fit-content;
+    font-size: 18px;
+  }
+  #home_socios h2 {
+    margin: 0;
+  }
+  #home_socios .banner p {
+    margin: 20px;
+  }
+  #home_ultimos_eventos {
+    overflow: hidden;
+  }
+  #home_ultimos_eventos .banner_desktop {
+    width: 120%;
+    display: flex;
+  }
+  #home_ultimos_eventos .banner {
+    justify-content: right;
+    width: 40%;
+    height: 250px;
+  }
+  #home_ultimos_eventos .banner p {
+    font-size: 16px;
+  }
+  #home_ultimos_eventos .banner h4 {
+    font-size: 24px;
+    font-family: "Kodchasan";
+    text-align: left;
+    margin: 0 10px;
+  }
+  #home_ultimos_eventos .sub_banner {
+    width: 50%;
+    justify-content: start;
+    overflow: hidden;
+    height: 250px;
+  }
+  #home_ultimos_eventos .sub_banner p {
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* Número máximo de líneas a mostrar */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  #home_ultimos_eventos .desktop_show {
+    display: flex;
+  }
+  .banner_desktop .banner:nth-child(2) {
+    background-image: url("/public/assets/imgs/torneo.jpg");
+  }
+  .banner_desktop .banner:nth-child(3) {
+    background-image: url("/public/assets/imgs/evento_4.jpg");
+    background-position: right;
+  }
 }
