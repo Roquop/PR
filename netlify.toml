@@ -1,8 +1,8 @@
 [build]
   base = ""
-  publish = "PR"
+  publish = ""
 
 [[redirects]]
   from = "/*"
-  to = "/:splat"
+  to = "/HTML/:splat"
   status = 200
