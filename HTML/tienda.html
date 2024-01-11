@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
+
 <body>
     <header>
         <div class="banner_verde">
@@ -13,13 +15,13 @@
                 <img class="header_img" src="/public/assets/imgs/logotipo_negro.svg" alt="">
             </a>
             <div id="desktop_menu">
-                <button class="desktop_show orange_btn" id="boton_miembro">
+                <a class="link_button desktop_show orange_btn" id="boton_miembro">
                     ¡Hazte Miembro!
-                </button>
-                <button class="desktop_show" id="boton_identificate">
+                </a>
+                <a class="link_button desktop_show" id="boton_identificate">
                     <img src="/public/assets/icons/Customer.svg" alt="">
                     Identifícate
-                </button>
+                </a>
                 <a href="#">
                     <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
                 </a>
@@ -44,24 +46,114 @@
                 </nav>
             </div>
         </div>
-        <div id="portada">
-            <p class="desktop_hide">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
-                las ventajas e
-                inscríbete a
-                continuación</p>
-            <nav class="desktop_show">
-                <ul>
-                    <li><a href="/HTML/club.html">El Club</a></li>
-                    <li><a href="/HTML/tienda.html">Tienda</a></li>
-                    <li><a href="#">Reserva</a></li>
-                    <li><a href="#">Clases</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
-    <main id="tienda"></main>
+    <main id="tienda">
+        <section class="busqueda">
+            <input placeholder="Busca aquí tu producto..." id="buscador" type="text" class="text">
+            <a href="">
+                <img id="lupa" src="/public/assets/icons/Search.svg" alt="">
+            </a>
+        </section>
+        <section class="categorias desktop_hide">
+            <div class="desplegable_categorias">CATEGORÍAS</div>
+            <input type="checkbox" name="categorias_check" id="categorias_check">
+            <img class="arrow_down" src="/public/assets/icons/SortDown.svg" alt="">
+            <div class="categorias_lista">
+                <ul>
+                    <li><a href="#">OFERTAS</a></li>
+                    <li><a href="#">TENIS</a></li>
+                    <li><a href="#">PALAS</a></li>
+                    <li><a href="#">RAQUETAS</a></li>
+                    <li><a href="#">BOLSAS</a></li>
+                    <li><a href="#">CALZADO</a></li>
+                    <li><a href="#">ACCESORIOS Y COMPLEMENTOS</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="desktop_show categorias_desktop">
+            <ul>
+                <li><a href="#">OFERTAS</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">PALAS</a></li>
+                <li><a href="#">RAQUETAS</a></li>
+                <li><a href="#">BOLSAS</a></li>
+                <li><a href="#">CALZADO</a></li>
+                <li><a href="#">ACCESORIOS Y COMPLEMENTOS</a></li>
+            </ul>
+        </section>
+        <section class="ofertas">
+            <div class="oferta1">
+                <div class="texto_oferta">¡Oferta!</div>
+                <div class="precio_oferta">
+                    <p>88€</p>
+                    <p>25€</p>
+                </div>
+            </div>
+            <div class="oferta2">
+                <div class="texto_oferta">¡Oferta!</div>
+                <div class="precio_oferta">
+                    <p>55€</p>
+                    <p>20€</p>
+                </div>
+            </div>
+            <div class="oferta3 desktop_show">
+                <div class="texto_oferta">¡Oferta!</div>
+                <div class="precio_oferta">
+                    <p>15€</p>
+                    <p>5€</p>
+                </div>
+            </div>
+        </section>
+        <section class="ultimos_productos">
+            <h2>Últimos Productos</h2>
+            <div class="banner_desktop">
+                <div class="banner banner_three">
+                    <h4 class="encabezado_tienda desktop_hide">Pack: 3 Pelotas</h4>
+                    <div class="sub_banner sub_banner_three">
+                        <h4 class="titulo_mini desktop_show">Pack de 3 pelotas</h4>
+                        <p>8€</p>
+                        <p class="desktop_hide">Pack de 3 pelotas</p>
+                        <br>
+                        <p class="desktop_show">
+                            Este conjunto clásico de 3 pelotas ha sido usado tan solo dos veces, la persona propietaria
+                            se lesionó y quiere venderlas antes de dejar que se malogren y así saber que alguien las
+                            disfrutará en su lugar.
+                        </p>
+                    </div>
+                </div>
+                <div class="banner banner_three">
+                    <h4 class="encabezado_tienda desktop_hide">Pala de Pádel</h4>
+                    <div class="sub_banner sub_banner_three">
+                        <h4 class="titulo_mini desktop_show">Pala Pro de Padel</h4>
+                        <p>45€</p>
+                        <p class="desktop_hide">Pala pro de Padel</p>
+                        <br>
+                        <p class="desktop_show">Pala profesional de Pádel con un equilibrado punto blando. Utilizada
+                            durante medio año por un
+                            jugador, cambiada porque le han regalado una pala superior que se corresponde a su
+                            categoría, así que no dejes pasar este ofertón, ¡no pasan a menudo!</p>
+                    </div>
+                </div>
+                <div class="banner banner_three desktop_show">
+                    <h4 class="encabezado_tienda desktop_hide">Camiseta Blanca</h4>
+                    <div class="sub_banner sub_banner_three">
+                        <h4 class="titulo_mini desktop_show">Camiseta blanca</h4>
+                        <p>5€</p>
+                        <p class="desktop_hide">Camiseta blanca</p>
+                        <br>
+                        <p class="desktop_show">
+                            Camiseta blanca que no ha llegado a ser utilizada por un problema de tamaño. El miembro
+                            propietario de la camiseta ha decidido venderla para favorecer a la asociación en vez de
+                            devolverla a la tienda ¡gracias por tu trabajo!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="orange_100_btn">
+            <a class="link_button orange_btn">¡Vende tu producto!</a>
+        </div>
+    </main>
     <footer>
         <div class="footer_container">
             <div id="links">
@@ -80,5 +172,7 @@
                 </div>
             </div>
         </div>
-    </footer></body>
+    </footer>
+</body>
+
 </html>
