@@ -99,6 +99,48 @@ header li {
 }
 #desktop_menu {
   display: flex;
+  align-items: center;
+}
+header div {
+  display: flex;
+}
+#menu_mobile {
+  z-index: 2;
+  /* opacity: 0%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  right: calc(16px);
+  cursor: pointer;
+}
+#menu_mobile:checked + .nav_mobile {
+  visibility: visible;
+}
+.menu_mobile_icon {
+  display: flex;
+}
+.nav_mobile {
+  visibility: collapse;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 1;
+  background-color: black;
+  color: white;
+  font-family: "Kodchasan";
+}
+.close {
+  top: 30px;
+  right: 30px;
+  width: fit-content;
+  font-size: 25px;
+  display: flex;
+  justify-content: right;
+  position: absolute;
 }
 /* FOOTER */
 footer {
@@ -535,7 +577,7 @@ footer :last-child {
     background-position: 75%;
     background-repeat: no-repeat;
   }
-  .dos_botones{
+  .dos_botones {
     margin: 25px 0;
   }
   /* EL CLUB */
@@ -564,7 +606,7 @@ footer :last-child {
     background-position: top;
   }
   /* EL BLOG */
-  #home_blog{
+  #home_blog {
     margin: 40px 0;
   }
   #home_blog h2 {
