@@ -22,7 +22,7 @@
                     <img src="/public/assets/icons/Customer.svg" alt="">
                     Identifícate
                 </a>
-                <a href="#">
+                <a href="#" class="carrito">
                     <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
                 </a>
             </div>
@@ -30,7 +30,7 @@
                 <img class="desktop_hide" src="/public/assets/icons/Customer.svg" alt="">
             </a>
             <img class="desktop_hide" src="/public/assets/icons/Menu.svg" alt="">
-            <input class="desktop_hide" type="checkbox" name="" id="menu_mobile">
+            <input class="desktop_hide" type="checkbox" name="menu_mobile" id="menu_mobile">
             <div class="nav_mobile">
                 <div class="close">X
                 </div>
@@ -46,15 +46,31 @@
                 </nav>
             </div>
         </div>
+        <div class="portada desktop_show">
+            <p class="desktop_hide">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
+                las ventajas e
+                inscríbete a
+                continuación</p>
+            <nav class="desktop_show">
+                <ul>
+                    <li><a href="/HTML/club.html">El Club</a></li>
+                    <li><a href="/HTML/tienda.html">Tienda</a></li>
+                    <li><a href="#">Reserva</a></li>
+                    <li><a href="#">Clases</a></li>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main id="tienda">
-        <section class="busqueda">
+        <div class="busqueda">
             <input placeholder="Busca aquí tu producto..." id="buscador" type="text" class="text">
             <a href="">
                 <img id="lupa" src="/public/assets/icons/Search.svg" alt="">
             </a>
-        </section>
-        <section class="categorias desktop_hide">
+        </div>
+        <div class="categorias desktop_hide">
             <div class="desplegable_categorias">CATEGORÍAS</div>
             <input type="checkbox" name="categorias_check" id="categorias_check">
             <img class="arrow_down" src="/public/assets/icons/SortDown.svg" alt="">
@@ -69,8 +85,8 @@
                     <li><a href="#">ACCESORIOS Y COMPLEMENTOS</a></li>
                 </ul>
             </div>
-        </section>
-        <section class="desktop_show categorias_desktop">
+        </div>
+        <div class="desktop_show categorias_desktop">
             <ul>
                 <li><a href="#">OFERTAS</a></li>
                 <li><a href="#">TENIS</a></li>
@@ -80,8 +96,8 @@
                 <li><a href="#">CALZADO</a></li>
                 <li><a href="#">ACCESORIOS Y COMPLEMENTOS</a></li>
             </ul>
-        </section>
-        <section class="ofertas">
+        </div>
+        <div class="ofertas">
             <div class="oferta1">
                 <div class="texto_oferta">¡Oferta!</div>
                 <div class="precio_oferta">
@@ -103,7 +119,7 @@
                     <p>5€</p>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="ultimos_productos">
             <h2>Últimos Productos</h2>
             <div class="banner_desktop">

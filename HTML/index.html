@@ -22,7 +22,7 @@
                     <img src="/public/assets/icons/Customer.svg" alt="">
                     Identifícate
                 </a>
-                <a href="#">
+                <a href="#" class="carrito">
                     <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
                 </a>
             </div>
@@ -46,7 +46,7 @@
                 </nav>
             </div>
         </div>
-        <div id="portada">
+        <div class="portada">
             <p class="desktop_hide">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
                 las ventajas e
                 inscríbete a
@@ -67,31 +67,33 @@
         <section id="home_socios">
             <div id="socios_btn" class="desktop_hide dos_botones">
                 <a class="link_button">Inicia Sesión</a>
-                <a class="link_button">Hazte Miembro</a>
+                <a href="/HTML/socios.html" class="link_button">Hazte Miembro</a>
             </div>
             <h3 class="desktop_hide">Ventajas de ser miembro</h3>
             <p class="desktop_show">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
                 las ventajas e
                 inscríbete a
                 continuación</p>
-            <div class="banner" id="miembro_banner">
-                <div id="miembro_texto_banner" class="sub_banner">
-                    <h2 class="desktop_show">Ventajas miembros</h2>
-                    <ul>
-                        <li>Acceso a la tienda</li>
-                        <li>Descuentos en las actividades</li>
-                        <li>¡y más!</li>
-                    </ul>
-                    <p>¡Haz click en esta sección para descubrir todas las ventajas!</p>
+            <a href="/HTML/socios.html">
+                <div class="banner" id="miembro_banner">
+                    <div id="miembro_texto_banner" class="sub_banner">
+                        <h2 class="desktop_show">Ventajas miembros</h2>
+                        <ul>
+                            <li>Acceso a la tienda</li>
+                            <li>Descuentos en las actividades</li>
+                            <li>¡y más!</li>
+                        </ul>
+                        <p>¡Haz click en esta sección para descubrir todas las ventajas!</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         </section>
         <section id="home_ultimos_eventos">
             <h2>Nuestros Últimos Eventos</h2>
             <p>En EivissaPadel organizamos eventos regularmente para concienciar a la comunidad sobre el medioambiente e
                 incentivar el estilo de vida deportivo.</p>
             <div class="banner_desktop">
-                <div class="banner banner_three eventos_banner">
+                <a href="#" class="banner banner_three eventos_banner">
                     <div class="eventos_texto_banner sub_banner_three sub_banner">
                         <h4 class="titulo_mini">Recogida Popular</h4>
                         <p>
@@ -103,9 +105,8 @@
                             compartir con los demás.
                         </p>
                     </div>
-                </div>
-
-                <div class="banner banner_three eventos_banner desktop_show">
+                </a>
+                <a href="#" class="banner banner_three eventos_banner desktop_show">
                     <div class="eventos_texto_banner sub_banner sub_banner_three">
                         <h4 class="titulo_mini">Torneo Solidario</h4>
                         <p>
@@ -116,9 +117,8 @@
                             acero y un punto suave muy equilibrado, ¡ánimo a todos!
                         </p>
                     </div>
-                </div>
-
-                <div class="banner banner_three eventos_banner desktop_show">
+                </a>
+                <a href="#" class="banner banner_three eventos_banner desktop_show">
                     <div class="eventos_texto_banner sub_banner sub_banner_three">
                         <h4 class="titulo_mini">Limpiando Juntos</h4>
                         <p>
@@ -133,8 +133,7 @@
                             actividades educativas y divertidas diseñadas especialmente para ellos.
                         </p>
                     </div>
-                </div>
-
+                </a>
             </div>
         </section>
         <section id="home_tienda">
@@ -142,7 +141,7 @@
             <p>En nuestra tienda encontrarás todos los productos vendidos por los socios en su mejor calidad.</p>
             <h3 class="desktop_show">Últimos productos a la venta</h3>
             <div class="banner_desktop">
-                <div id="banner_home_tienda" class="banner banner_three">
+                <a href="/HTML/tienda.html" id="banner_home_tienda" class="banner banner_three">
                     <div class="sub_banner sub_banner_three">
                         <h4 class="desktop_hide titulo_mini">Último producto a la venta</h4>
                         <h4 class="titulo_mini desktop_show">Pack de 3 pelotas</h4>
@@ -155,8 +154,8 @@
                             disfrutará en su lugar.
                         </p>
                     </div>
-                </div>
-                <div class="banner banner_three desktop_show">
+                </a>
+                <a href="/HTML/tienda.html" class="banner banner_three desktop_show">
                     <div class="sub_banner sub_banner_three">
                         <h4 class="titulo_mini">Pala Pro de Padel</h4>
                         <p>
@@ -167,8 +166,8 @@
                             jugador, cambiada porque le han regalado una pala superior que se corresponde a su
                             categoría, así que no dejes pasar este ofertón, ¡no pasan a menudo!</p>
                     </div>
-                </div>
-                <div class="banner banner_three desktop_show">
+                </a>
+                <a href="/HTML/tienda.html" class="banner banner_three desktop_show">
                     <div class="sub_banner sub_banner_three">
                         <h4 class="titulo_mini">Camiseta blanca</h4>
                         <p>
@@ -181,12 +180,12 @@
                             devolverla a la tienda ¡gracias por tu trabajo!
                         </p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
         <div id="reserva_clases" class="dos_botones">
-            <a class="link_button">Reserva Pista</a>
-            <a class="link_button">Clases</a>
+            <a class="link_button blue_btn">Reserva Pista</a>
+            <a class="link_button blue_btn">Clases</a>
         </div>
         <section id="home_club">
             <h2>El Club</h2>
@@ -205,7 +204,7 @@
             <h2>Blog</h2>
             <p>¡Entérate de todo en nuestro blog!</p>
             <div class="banner_desktop">
-                <div class="banner banner_three">
+                <a href="#" class="banner banner_three">
                     <div class="home_blog_img"></div>
                     <div class="home_blog_texto sub_banner sub_banner_three">
                         <p>¡Siguen llegando miembros!</p>
@@ -214,8 +213,8 @@
                             exento de dificultades, la ilusión y las ganas con los que participan todos nuestros
                             integrantes hacen que cualquier bache en el camino...</p>
                     </div>
-                </div>
-                <div class="banner banner_three desktop_show">
+                </a>
+                <a href="#" class="banner banner_three desktop_show">
                     <div class="home_blog_img"></div>
                     <div class="home_blog_texto sub_banner sub_banner_three">
                         <p>¡Éxito en el PadelFest!
@@ -225,11 +224,11 @@
                             y alto filtrado en las duchas del club, con lo cual se podrá reducir el nivel de cal y por
                             lo tanto alargar considerablemente la vida de las tuberías, que ya...</p>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
         <div class="orange_100_btn">
-            <a class="link_button orange_btn">Contáctanos</a>
+            <a href="#" class="link_button orange_btn">Contáctanos</a>
         </div>
     </main>
     <footer>
