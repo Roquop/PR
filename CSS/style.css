@@ -27,7 +27,8 @@
   box-sizing: border-box;
   position: relative;
 }
-main, .footer_container {
+main,
+.footer_container {
   margin: 0;
   font-family: "Inika", serif;
   max-width: 1200px;
@@ -37,7 +38,8 @@ main, .footer_container {
   /* background-position: calc(-50vw + 600px); */
 }
 @media (min-width: 1200px) {
-  main, .footer_container {
+  main,
+  .footer_container {
     margin-left: calc(50vw - 600px);
   }
 }
@@ -99,7 +101,7 @@ header li {
   display: flex;
 }
 /* FOOTER */
-footer{
+footer {
   margin: 0;
 }
 footer {
@@ -402,7 +404,6 @@ footer :last-child {
   .banner {
     min-height: 250px;
     background-position-y: 30%;
-    margin: 16px;
   }
 }
 /* HOME DESKTOP */
@@ -425,10 +426,12 @@ footer :last-child {
   /* ULTIMOS EVENTOS */
   #home_ultimos_eventos {
     overflow: hidden;
+    margin: 20px 0;
   }
   .banner_desktop {
     width: 120%;
     display: flex;
+    gap: 20px;
   }
   .banner_three {
     justify-content: right;
@@ -477,6 +480,7 @@ footer :last-child {
   }
   #home_tienda {
     overflow: hidden;
+    margin: 0;
   }
   #home_tienda .banner {
     justify-content: right;
@@ -531,14 +535,17 @@ footer :last-child {
     background-position: 75%;
     background-repeat: no-repeat;
   }
+  .dos_botones{
+    margin: 25px 0;
+  }
   /* EL CLUB */
   #home_club h2 {
     text-align: left;
-    margin: 20px;
   }
   #botones_dedo {
     flex-direction: row;
     justify-content: space-around;
+    margin: 0;
   }
   #botones_dedo button,
   .imagen_club {
@@ -557,6 +564,9 @@ footer :last-child {
     background-position: top;
   }
   /* EL BLOG */
+  #home_blog{
+    margin: 40px 0;
+  }
   #home_blog h2 {
     text-align: left;
     margin: 20px;
