@@ -10,38 +10,40 @@
 
 <body>
     <header>
-        <img class="header_img" src="/public/assets/imgs/logotipo_negro.svg" alt="">
-        <div id="desktop_menu">
-            <button class="desktop_show orange_btn" id="boton_miembro">
-                ¡Hazte Miembro!
-            </button>
-            <button class="desktop_show" id="boton_identificate">
-                <img src="/public/assets/icons/Customer.svg" alt="">
-                Identifícate
-            </button>
-            <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
+        <div class="banner_verde">
+            <img class="header_img" src="/public/assets/imgs/logotipo_negro.svg" alt="">
+            <div id="desktop_menu">
+                <button class="desktop_show orange_btn" id="boton_miembro">
+                    ¡Hazte Miembro!
+                </button>
+                <button class="desktop_show" id="boton_identificate">
+                    <img src="/public/assets/icons/Customer.svg" alt="">
+                    Identifícate
+                </button>
+                <img src="/public/assets/icons/Shopping_Basket.svg" alt="">
+            </div>
+            <img class="desktop_hide" src="/public/assets/icons/Customer.svg" alt="">
+            <img class="desktop_hide" src="/public/assets/icons/Menu.svg" alt="">
         </div>
-        <img class="desktop_hide" src="/public/assets/icons/Customer.svg" alt="">
-        <img class="desktop_hide" src="/public/assets/icons/Menu.svg" alt="">
+        <div id="portada">
+            <p class="desktop_hide">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
+                las ventajas e
+                inscríbete a
+                continuación</p>
+            <nav class="desktop_show">
+                <ul>
+                    <li>El Club</li>
+                    <li>Tienda</li>
+                    <li>Reserva</li>
+                    <li>Clases</li>
+                    <li>Contacto</li>
+                    <li>Blog</li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main id="home">
         <section id="home_socios">
-            <div id="portada">
-                <p class="desktop_hide">¡Bienvenidos a EivissaPadel! Si aún no eres miembro de nuestro club, descubre
-                    las ventajas e
-                    inscríbete a
-                    continuación</p>
-                <nav class="desktop_show">
-                    <ul>
-                        <li>El Club</li>
-                        <li>Tienda</li>
-                        <li>Reserva</li>
-                        <li>Clases</li>
-                        <li>Contacto</li>
-                        <li>Blog</li>
-                    </ul>
-                </nav>
-            </div>
             <div id="socios_btn" class="desktop_hide dos_botones">
                 <button>Inicia Sesión</button>
                 <button>Hazte Miembro</button>
@@ -210,19 +212,21 @@
         </div>
     </main>
     <footer>
-        <div id="links">
-            <img src="/public/assets/icons/YouTube.png" alt="">
-            <img src="/public/assets/icons/Instagram.png" alt="">
-            <img src="/public/assets/icons/TwitterX.png" alt="">
-            <img src="/public/assets/icons/Facebook.png" alt="">
-        </div>
-        <div class="footer_desktop">
-            <div>
-                <p>Política legal</p>
+        <div class="footer_container">
+            <div id="links">
+                <img src="/public/assets/icons/YouTube.png" alt="">
+                <img src="/public/assets/icons/Instagram.png" alt="">
+                <img src="/public/assets/icons/TwitterX.png" alt="">
+                <img src="/public/assets/icons/Facebook.png" alt="">
             </div>
-            <div>
-                <p>971396338 - EivissaPadel SL</p>
-                <p>Todos los derechos reservado ©️</p>
+            <div class="footer_desktop">
+                <div>
+                    <p>Política legal</p>
+                </div>
+                <div>
+                    <p>971396338 - EivissaPadel SL</p>
+                    <p>Todos los derechos reservado ©️</p>
+                </div>
             </div>
         </div>
     </footer>
