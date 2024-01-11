@@ -97,9 +97,12 @@ p {
 header li {
   font-family: "Kodchasan";
 }
-#desktop_menu {
+header a {
   display: flex;
   align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
 }
 header div {
   display: flex;
@@ -123,7 +126,7 @@ header div {
   width: 28px;
   height: 28px;
   margin: 0;
-  right: calc(16px);
+  left: calc(86.5%);
   cursor: pointer;
 }
 .menu_mobile_icon {
@@ -151,19 +154,17 @@ header div {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: calc(100vh / 10);
+  margin-top: calc(100vh / 12);
 }
-.nav_mobile ul li {
-  width: 100%;
+.nav_mobile ul li a{
   font-size: 24px;
-  text-align: center;
   margin: calc(100vh / 30) 0;
   padding: calc(100vh / 30) 0;
   background-color: #ededed;
 }
 .close {
   top: 30px;
-  right: 30px;
+  left: calc(86.5%);
   width: fit-content;
   font-size: 25px;
   display: flex;
@@ -423,7 +424,7 @@ footer :last-child {
   }
   #desktop_menu {
     display: flex;
-    width: 75%;
+    width: 100%;
     justify-content: right;
     gap: 25px;
   }
@@ -458,24 +459,24 @@ footer :last-child {
   #portada::before {
     opacity: 0%;
   }
-  nav {
+  #portada nav {
     width: 100%;
     justify-content: center;
   }
-  nav ul {
+  #portada nav ul {
     list-style: none;
     display: flex;
     padding: 0;
     justify-content: space-between;
     margin: 16px;
   }
-  nav ul li {
+  #portada nav ul li a{
     min-height: 60px;
     background-color: #ededed;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 7);
+    width: calc(100vw / 7);
   }
   .banner {
     min-height: 250px;
