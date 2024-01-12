@@ -72,12 +72,24 @@ h4,
 .carrito:hover,
 .portada a:hover,
 .nav_mobile li:hover,
-.categorias_desktop ul li:hover {
+.categorias_desktop ul li:hover,
+#categorias_check:hover + .desplegable_categorias,
+.categorias_lista a:hover {
   filter: invert(100%);
 }
-#tienda > div.desktop_show.categorias_desktop > ul > li:nth-child(1) > a:hover {
+.categorias_desktop ul li:nth-child(1) a:hover,
+.categorias_lista a:hover {
   background-color: #085be9;
 }
+#categorias_check:hover + .desplegable_categorias {
+  background-color: #085be9;
+  width: 100%;
+  position: absolute;
+  padding: 11px 20px;
+  top: 0;
+  left: 0;
+}
+
 #boton_identificate:hover {
   background-color: #f7a416;
 }
@@ -381,7 +393,7 @@ textarea {
 }
 #banner_home_tienda {
   justify-content: left;
-  background-image: url("../public//assets/imgs/pelotas.jpg");
+  background-image: url("../public/assets/imgs/pelotas.jpg");
 }
 #home_tienda h4 {
   margin: 5px;
@@ -495,6 +507,7 @@ textarea {
   left: 0;
   z-index: 1;
   opacity: 0;
+  cursor: pointer;
 }
 .categorias_lista {
   visibility: collapse;
