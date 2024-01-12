@@ -70,13 +70,36 @@ h4,
 }
 .header_img:hover,
 .carrito:hover,
-.portada a:hover {
+.portada a:hover,
+.nav_mobile li:hover,
+.categorias_desktop ul li:hover {
   filter: invert(100%);
+}
+#tienda > div.desktop_show.categorias_desktop > ul > li:nth-child(1) > a:hover {
+  background-color: #085be9;
 }
 #boton_identificate:hover {
   background-color: #f7a416;
 }
-.sub_banner:hover {
+#botones_dedo .link_button:hover {
+  filter: invert(100%);
+  color: white;
+  background-color: #f7a416;
+}
+.home_blog_img:hover {
+  filter: saturate(150%);
+  filter: brightness(1.2);
+}
+#botones_dedo .link_button:hover {
+  background-color: #085be9;
+}
+#botones_dedo .link_button:active {
+  border: 4px solid black;
+}
+input:hover {
+  border: 2px solid #6bc9f3;
+}
+.banner:hover .sub_banner {
   background-color: rgba(237, 237, 237, 0.9);
 }
 .orange_btn:hover,
@@ -88,6 +111,11 @@ h4,
   color: #f7a416;
   background-color: #1d1d1b;
   font-weight: bold;
+}
+.oferta1:hover div,
+.oferta2:hover div,
+.oferta3:hover div {
+  background-color: rgba(237, 237, 237, 0.9);
 }
 .dos_botones .blue_btn:active,
 .blue_btn:active {
@@ -138,7 +166,7 @@ p {
 header li {
   font-family: "Kodchasan";
 }
-#socios_btn{
+#socios_btn {
   margin: 16px 0 0 0;
 }
 header a {
@@ -235,8 +263,11 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-footer :last-child {
+.footer_desktop{
   margin-bottom: 16px;
+}
+textarea{
+  resize: none;
 }
 /* HOME */
 .portada {
@@ -572,13 +603,13 @@ footer :last-child {
   font-family: "Inika", sans-serif;
   font-weight: normal;
 }
-.ultimos_productos div:nth-child(1) {
+.ultimos_productos a:nth-child(1) {
   background-image: url("/public/assets/imgs/pelotas.jpg");
 }
-#tienda > section.ultimos_productos > div > div:nth-child(2) {
+#tienda > section.ultimos_productos > div > a:nth-child(2) {
   background-image: url("/public/assets/imgs/padel_pala_2.jpg");
 }
-#tienda > section.ultimos_productos > div > div:nth-child(3) {
+#tienda > section.ultimos_productos > div > a:nth-child(3) {
   background-image: url("/public/assets/imgs/camiseta.jpg");
 }
 /* SOCIOS */
@@ -794,10 +825,10 @@ footer :last-child {
 .foto2 {
   background-image: url("/public/assets/imgs/asociacion_2.jpg");
 }
-.asociacion > div:nth-child(3) .foto1 {
+#asociacion > div:nth-child(3) .foto1 {
   background-image: url("/public/assets/imgs/asociacion_3.jpg");
 }
-.asociacion > div:nth-child(3) .foto2 {
+#asociacion > div:nth-child(3) .foto2 {
   background-image: url("/public/assets/imgs/asociacion_4.jpg");
 }
 /* COMO ESTAMOS ORGANIZADOS */
@@ -853,19 +884,19 @@ footer :last-child {
   position: absolute;
   background-color: rgba(237, 237, 237, 0.75);
 }
-.compromiso_medioambiental .foto1 {
+#compromiso_medioambiental .foto1 {
   background-image: url("/public/assets/imgs/medio1.jpg");
 }
-.compromiso_medioambiental .foto2 {
+#compromiso_medioambiental .foto2 {
   background-image: url("/public/assets/imgs/medio2.jpg");
 }
-.compromiso_medioambiental .foto3 {
+#compromiso_medioambiental .foto3 {
   background-image: url("/public/assets/imgs/medio3.jpg");
 }
-.compromiso_medioambiental .foto4 {
+#compromiso_medioambiental .foto4 {
   background-image: url("/public/assets/imgs/medio4.jpg");
 }
-.compromiso_medioambiental .foto5 {
+#compromiso_medioambiental .foto5 {
   background-image: url("/public/assets/imgs/medio5.jpg");
 }
 #club .orange_btn {
@@ -1384,7 +1415,7 @@ footer :last-child {
     margin: 0;
     padding: 30px;
   }
-  .asociacion {
+  #asociacion {
     display: flex;
     flex-direction: column;
   }
@@ -1403,15 +1434,15 @@ footer :last-child {
     width: 70%;
     margin: 20px;
   }
-  #club > section.asociacion > div:nth-child(2) {
+  #club > section#asociacion > div:nth-child(2) {
     margin: 0;
   }
-  #club > section.asociacion > div:nth-child(3) {
+  #club > section#asociacion > div:nth-child(3) {
     flex-direction: row-reverse;
     margin-top: 0;
   }
   /* COMPROMISO */
-  #club > section.compromiso_medioambiental > div.titulo_compromiso {
+  #club > section#compromiso_medioambiental > div.titulo_compromiso {
     height: 350px;
   }
 }
