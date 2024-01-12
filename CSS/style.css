@@ -138,6 +138,9 @@ p {
 header li {
   font-family: "Kodchasan";
 }
+#socios_btn{
+  margin: 16px 0 0 0;
+}
 header a {
   display: flex;
   align-items: center;
