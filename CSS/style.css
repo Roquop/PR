@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Inika";
-  src: url("/public/assets/fonts/Inika-Regular.ttf");
+  src: url("../public/assets/fonts/Inika-Regular.ttf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Inika";
-  src: url("/public/assets/fonts/Inika-Bold.ttf");
+  src: url("../public/assets/fonts/Inika-Bold.ttf");
   font-style: normal;
   font-weight: bold;
 }
 @font-face {
   font-family: "Kodchasan";
-  src: url("/public/assets/fonts/Kodchasan-Regular.ttf");
+  src: url("../public/assets/fonts/Kodchasan-Regular.ttf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Kodchasan";
-  src: url("/public/assets/fonts/Kodchasan-Bold.ttf");
+  src: url("../public/assets/fonts/Kodchasan-Bold.ttf");
   font-style: normal;
   font-weight: bold;
 }
@@ -32,7 +32,7 @@ main,
   margin: 0;
   font-family: "Inika", serif;
   max-width: 1200px;
-  /* background-image: url("/public/assets/imgs/pelota_evento_uno.jpg"); */
+  /* background-image: url("../public/assets/imgs/pelota_evento_uno.jpg"); */
   /* background-repeat: no-repeat;
   background-size: cover; */
   /* background-position: calc(-50vw + 600px); */
@@ -277,7 +277,7 @@ textarea {
   display: flex;
   align-items: center;
   text-align: center;
-  background-image: url("/public/assets/imgs/fondo_padel.jpg");
+  background-image: url("../public/assets/imgs/fondo_padel.jpg");
   background-size: cover;
   background-position-y: 80%;
   background-repeat: no-repeat;
@@ -315,7 +315,7 @@ textarea {
   display: flex;
   justify-content: right;
   min-height: 145px;
-  background-image: url("/public/assets/imgs/padel_miembro.jpg");
+  background-image: url("../public/assets/imgs/padel_miembro.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -355,7 +355,7 @@ textarea {
 }
 .eventos_banner {
   justify-content: left;
-  background-image: url("/public/assets/imgs/pelota_evento_uno.jpg");
+  background-image: url("../public/assets/imgs/pelota_evento_uno.jpg");
 }
 .titulo_mini {
   font-family: "Inika";
@@ -381,7 +381,7 @@ textarea {
 }
 #banner_home_tienda {
   justify-content: left;
-  background-image: url("/public//assets/imgs/pelotas.jpg");
+  background-image: url("../public//assets/imgs/pelotas.jpg");
 }
 #home_tienda h4 {
   margin: 5px;
@@ -435,7 +435,7 @@ textarea {
 .home_blog_img {
   width: 50vw;
   margin: 10px 10px 10px 20px;
-  background-image: url("/public/assets/imgs/jugadora_padel.jpg");
+  background-image: url("../public/assets/imgs/jugadora_padel.jpg");
   background-size: 250%;
   background-position: top center;
 }
@@ -552,7 +552,7 @@ textarea {
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  background-image: url("/public/assets/imgs/Pala_tienda.jpg");
+  background-image: url("../public/assets/imgs/Pala_tienda.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -570,7 +570,7 @@ textarea {
   border-radius: 25px;
 }
 .oferta2 {
-  background-image: url("/public/assets/imgs/zapatos_1.jpg");
+  background-image: url("../public/assets/imgs/zapatos_1.jpg");
   background-size: 400%;
   background-position: bottom;
   background-position-x: 15%;
@@ -605,13 +605,13 @@ textarea {
   font-weight: normal;
 }
 .ultimos_productos a:nth-child(1) {
-  background-image: url("/public/assets/imgs/pelotas.jpg");
+  background-image: url("../public/assets/imgs/pelotas.jpg");
 }
 #tienda > section.ultimos_productos > div > a:nth-child(2) {
-  background-image: url("/public/assets/imgs/padel_pala_2.jpg");
+  background-image: url("../public/assets/imgs/padel_pala_2.jpg");
 }
 #tienda > section.ultimos_productos > div > a:nth-child(3) {
-  background-image: url("/public/assets/imgs/camiseta.jpg");
+  background-image: url("../public/assets/imgs/camiseta.jpg");
 }
 /* SOCIOS */
 /* SOCIOS VENTAJAS */
@@ -793,7 +793,7 @@ textarea {
   min-height: 175px;
 }
 .portada_club {
-  background-image: url("/public/assets/imgs/pista-tenis.jpg");
+  background-image: url("../public/assets/imgs/pista-tenis.jpg");
 }
 .portada_club p {
   margin: 16px;
@@ -821,18 +821,18 @@ textarea {
 .foto2 {
   width: 100%;
   height: 100%;
-  background-image: url("/public/assets/imgs/asociacion_1.jpg");
+  background-image: url("../public/assets/imgs/asociacion_1.jpg");
   background-size: cover;
   background-position: center;
 }
 .foto2 {
-  background-image: url("/public/assets/imgs/asociacion_2.jpg");
+  background-image: url("../public/assets/imgs/asociacion_2.jpg");
 }
 #asociacion > div:nth-child(3) .foto1 {
-  background-image: url("/public/assets/imgs/asociacion_3.jpg");
+  background-image: url("../public/assets/imgs/asociacion_3.jpg");
 }
 #asociacion > div:nth-child(3) .foto2 {
-  background-image: url("/public/assets/imgs/asociacion_4.jpg");
+  background-image: url("../public/assets/imgs/asociacion_4.jpg");
 }
 /* COMO ESTAMOS ORGANIZADOS */
 .cinco_fotos {
@@ -853,28 +853,28 @@ textarea {
 .cinco_fotos .foto5 {
   width: calc(100% / 6);
   height: 100%;
-  background-image: url("/public/assets/imgs/persona_1.jpg");
+  background-image: url("../public/assets/imgs/persona_1.jpg");
   background-position: top;
   background-size: cover;
 }
 .cinco_fotos .foto2 {
-  background-image: url("/public/assets/imgs/persona_2.jpg");
+  background-image: url("../public/assets/imgs/persona_2.jpg");
 }
 .cinco_fotos .foto3 {
-  background-image: url("/public/assets/imgs/persona_3.jpg");
+  background-image: url("../public/assets/imgs/persona_3.jpg");
 }
 .cinco_fotos .foto4 {
-  background-image: url("/public/assets/imgs/persona_4.jpg");
+  background-image: url("../public/assets/imgs/persona_4.jpg");
 }
 .cinco_fotos .foto5 {
-  background-image: url("/public/assets/imgs/persona_5.jpg");
+  background-image: url("../public/assets/imgs/persona_5.jpg");
 }
 /* COMPROMISO */
 .titulo_compromiso {
   margin: 20px;
   display: flex;
   height: 150px;
-  background-image: url("/public/assets/imgs/compromiso.jpg");
+  background-image: url("../public/assets/imgs/compromiso.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -888,19 +888,19 @@ textarea {
   background-color: rgba(237, 237, 237, 0.75);
 }
 #compromiso_medioambiental .foto1 {
-  background-image: url("/public/assets/imgs/medio1.jpg");
+  background-image: url("../public/assets/imgs/medio1.jpg");
 }
 #compromiso_medioambiental .foto2 {
-  background-image: url("/public/assets/imgs/medio2.jpg");
+  background-image: url("../public/assets/imgs/medio2.jpg");
 }
 #compromiso_medioambiental .foto3 {
-  background-image: url("/public/assets/imgs/medio3.jpg");
+  background-image: url("../public/assets/imgs/medio3.jpg");
 }
 #compromiso_medioambiental .foto4 {
-  background-image: url("/public/assets/imgs/medio4.jpg");
+  background-image: url("../public/assets/imgs/medio4.jpg");
 }
 #compromiso_medioambiental .foto5 {
-  background-image: url("/public/assets/imgs/medio5.jpg");
+  background-image: url("../public/assets/imgs/medio5.jpg");
 }
 #club .orange_btn {
   margin: 40px 0;
@@ -1104,10 +1104,10 @@ textarea {
     display: -webkit-box;
   }
   .banner_desktop .banner:nth-child(2) {
-    background-image: url("/public/assets/imgs/torneo.jpg");
+    background-image: url("../public/assets/imgs/torneo.jpg");
   }
   .banner_desktop .banner:nth-child(3) {
-    background-image: url("/public/assets/imgs/evento_4.jpg");
+    background-image: url("../public/assets/imgs/evento_4.jpg");
     background-position: right;
   }
   /* LA TIENDA */
@@ -1139,13 +1139,13 @@ textarea {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("/public/assets/imgs/pelotas.jpg");
+    background-image: url("../public/assets/imgs/pelotas.jpg");
     background-size: cover;
     background-position: 75%;
     background-repeat: no-repeat;
   }
   #home_tienda .banner:nth-child(2) {
-    background-image: url("/public/assets/imgs/padel_pala_2.jpg");
+    background-image: url("../public/assets/imgs/padel_pala_2.jpg");
   }
   #home_tienda .banner:nth-child(2)::after {
     content: "";
@@ -1154,13 +1154,13 @@ textarea {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("/public/assets/imgs/padel_pala_2.jpg");
+    background-image: url("../public/assets/imgs/padel_pala_2.jpg");
     background-size: cover;
     background-position: 75%;
     background-repeat: no-repeat;
   }
   #home_tienda .banner:nth-child(3) {
-    background-image: url("/public/assets/imgs/camiseta.jpg");
+    background-image: url("../public/assets/imgs/camiseta.jpg");
   }
   #home_tienda .banner:nth-child(3)::after {
     content: "";
@@ -1169,7 +1169,7 @@ textarea {
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url("/public/assets/imgs/camiseta.jpg");
+    background-image: url("../public/assets/imgs/camiseta.jpg");
     background-size: cover;
     background-position: 75%;
     background-repeat: no-repeat;
@@ -1198,7 +1198,7 @@ textarea {
     width: 95px;
   }
   .imagen_club {
-    background-image: url("/public/assets/imgs/el_club_desktop.jpg");
+    background-image: url("../public/assets/imgs/el_club_desktop.jpg");
     background-size: cover;
     background-position: top;
   }
@@ -1242,7 +1242,7 @@ textarea {
     margin: 0;
   }
   #home_blog .banner:nth-child(2) .home_blog_img {
-    background-image: url("/public/assets/imgs/evento2blog.jpg");
+    background-image: url("../public/assets/imgs/evento2blog.jpg");
     background-size: cover;
   }
   /* LA TIENDA */
@@ -1302,7 +1302,7 @@ textarea {
     text-align: center;
   }
   .oferta3 {
-    background-image: url("/public/assets/imgs/botellatienda.jpg");
+    background-image: url("../public/assets/imgs/botellatienda.jpg");
   }
   /* ULTIMOS PRODUCTOS */
   #tienda .ultimos_productos .banner_desktop {
@@ -1408,7 +1408,7 @@ textarea {
     text-align: justify;
   }
   .portada_club {
-    background-image: url("/public/assets/imgs/fondo_padel.jpg");
+    background-image: url("../public/assets/imgs/fondo_padel.jpg");
   }
   .texto_club {
     position: absolute;
