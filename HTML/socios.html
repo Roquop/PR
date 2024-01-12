@@ -112,9 +112,9 @@
             <div class="desktop_3_form">
                 <form action="#" id="datos_personales">
                     <h3>Datos personales</h3>
-                    <label for="name_and_surname">Nombre y Apellidos</label>
+                    <label for="name">Nombre y Apellidos</label>
                     <input type="text" name="name_and_surname" id="name">
-                    <label for="postal_adress">Dirección Postal</label>
+                    <label for="postal">Dirección Postal</label>
                     <input type="text" name="postal_adress" id="postal">
                     <label for="birth_date">Fecha de Nacimiento</label>
                     <input type="date" name="birth_date" id="birth_date">
@@ -125,19 +125,19 @@
                         hablaremos contigo para cerrar los detalles:</p>
                     <div class="dos_niveles">
                         <div class="dos_check">
-                            <div><input type="checkbox" name="frecuencia_" value="">
-                                <p>1 vez al día</p>
+                            <div><input id="uno_dia" type="checkbox" name="frecuencia" value="">
+                                <label for="uno_dia">1 vez al día</label>
                             </div>
-                            <div><input type="checkbox" name="frecuencia" value="">
-                                <p>1 vez a la semana</p>
+                            <div><input id="uno_semana" type="checkbox" name="frecuencia" value="">
+                                <label for="uno_semana">1 vez a la semana</label>
                             </div>
                         </div>
                         <div class="dos_check">
-                            <div><input type="checkbox" name="frecuencia" value="">
-                                <p>1 vez al mes</p>
+                            <div><input id="uno_mes" type="checkbox" name="frecuencia" value="">
+                                <label for="uno_mes">1 vez al mes</label>
                             </div>
-                            <div><input type="checkbox" name="frecuencia" value="">
-                                <p>Otros (escribir en el recuadro):</p>
+                            <div><input id="otro_mes" type="checkbox" name="frecuencia" value="">
+                                <label for="otro_mes">Otros (escribir en el recuadro):</label>
                             </div>
                         </div>
                     </div>
@@ -150,10 +150,10 @@
                     <label for="email">Correo Electrónico</label>
                     <input type="text" name="email" id="email">
                     <div><input type="checkbox" name="check_email" id="check_email">
-                        <p>Prefiero comunicarme principalmente por correo</p>
+                        <label for="check_email">Prefiero comunicarme principalmente por correo</label>
                     </div>
                     <div> <input type="checkbox" name="check_phone" id="check_phone">
-                        <p>Prefiero comunicarme principalmente por teléfono</p>
+                        <label for="check_phone">Prefiero comunicarme principalmente por teléfono</label>
                     </div>
                 </form>
             </div>
@@ -165,23 +165,22 @@
                 </p>
                 <div class="dos_niveles">
                     <div class="dos_check">
-                        <div> <input type="checkbox" name="10_euros" id="10_euros">
-                            <p>Quiero contribuir con 10€</p>
+                        <div> <input type="checkbox" name="10_euros" id="diez_euros">
+                            <label for="diez_euros">Quiero contribuir con 10€</label>
                         </div>
-                        <div><input type="checkbox" name="15_euros" id="15_euros">
-                            <p>Quiero contribuir con 15€</p>
+                        <div><input type="checkbox" name="15_euros" id="quince_euros">
+                            <label for="quince_euros">Quiero contribuir con 15€</label>
                         </div>
                     </div>
                     <div class="dos_check">
-                        <div><input type="checkbox" name="35_euros" id="35_euros">
-                            <p>Quiero contribuir con 35€</p>
+                        <div><input type="checkbox" name="35_euros" id="treintaycinco_euros">
+                            <label for="treintaycinco_euros">Quiero contribuir con 35€</label>
                         </div>
                         <div> <input type="checkbox" name="otras_cantidades" id="otras_cantidades">
-                            <p>Otras cantidades (escribir a continuación):</p>
+                            <label for="otras_cantidades">Otras cantidades (escribir a continuación):</label>
                         </div>
                     </div>
                 </div>
-
                 <div class="euro">
                     <input type="number" name="cantidad" id="cantidad" placeholder="0.00">
                 </div>
@@ -199,8 +198,8 @@
                 <a title="enlace a Youtube (work in progress)" href="#"> <img src="/public/assets/icons/YouTube.png"
                         alt="logotipo de Youtube">
                 </a>
-                <a title="enlace a Instagram (work in progress)" href="#"> <img
-                        src="/public/assets/icons/Instagram.png" alt="logotipo de Instagram">
+                <a title="enlace a Instagram (work in progress)" href="#"> <img src="/public/assets/icons/Instagram.png"
+                        alt="logotipo de Instagram">
                 </a>
                 <a title="enlace a TwitterX (work in progress)" href="#"> <img src="/public/assets/icons/TwitterX.png"
                         alt="logotipo de TwitterX">
