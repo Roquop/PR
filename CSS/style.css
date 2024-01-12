@@ -184,7 +184,7 @@ header div {
 }
 #menu_mobile:checked {
   top: 30px;
-  left: calc(86.5%);
+  left: calc(82.5%);
   font-size: 25px;
   display: flex;
   position: fixed;
