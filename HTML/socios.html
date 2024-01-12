@@ -120,17 +120,23 @@
                     <h3>Disponibilidad</h3>
                     <p>Dinos cuándo estás disponible para participar en el club. Es una cumplimentación orientativa,
                         hablaremos contigo para cerrar los detalles:</p>
-                    <div><input type="checkbox" value="">
-                        <p>1 vez al día</p>
-                    </div>
-                    <div><input type="checkbox" value="">
-                        <p>1 vez a la semana</p>
-                    </div>
-                    <div><input type="checkbox" value="">
-                        <p>1 vez al mes</p>
-                    </div>
-                    <div><input type="checkbox" value="">
-                        <p>Otros (escribir en el recuadro):</p>
+                    <div class="dos_niveles">
+                        <div class="dos_check">
+                            <div><input type="checkbox" value="">
+                                <p>1 vez al día</p>
+                            </div>
+                            <div><input type="checkbox" value="">
+                                <p>1 vez a la semana</p>
+                            </div>
+                        </div>
+                        <div class="dos_check">
+                            <div><input type="checkbox" value="">
+                                <p>1 vez al mes</p>
+                            </div>
+                            <div><input type="checkbox" value="">
+                                <p>Otros (escribir en el recuadro):</p>
+                            </div>
+                        </div>
                     </div>
                     <textarea name="otros" id="otros" cols="30" rows="10"></textarea>
                 </form>
@@ -154,20 +160,33 @@
                     básica, pero con cantidades superiores podremos organizar más eventos y conseguir un alcance más
                     importante y por tanto mayor impacto en la comunidad. En cualquier, ¡tu aportación será bienvenida!
                 </p>
-                <input type="checkbox" name="10_euros" id="10_euros">
-                <p>Quiero contribuir con 10€</p>
-                <input type="checkbox" name="15_euros" id="15_euros">
-                <p>Quiero contribuir con 15€</p>
-                <input type="checkbox" name="35_euros" id="35_euros">
-                <p>Quiero contribuir con 35€</p>
-                <input type="checkbox" name="otras_cantidades" id="otras_cantidades">
-                <p>Otras cantidades (escribir a continuación):</p>
-                <input type="number" name="cantidad" id="cantidad">
+                <div class="dos_niveles">
+                    <div class="dos_check">
+                        <div> <input type="checkbox" name="10_euros" id="10_euros">
+                            <p>Quiero contribuir con 10€</p>
+                        </div>
+                        <div><input type="checkbox" name="15_euros" id="15_euros">
+                            <p>Quiero contribuir con 15€</p>
+                        </div>
+                    </div>
+                    <div class="dos_check">
+                        <div><input type="checkbox" name="35_euros" id="35_euros">
+                            <p>Quiero contribuir con 35€</p>
+                        </div>
+                        <div> <input type="checkbox" name="otras_cantidades" id="otras_cantidades">
+                            <p>Otras cantidades (escribir a continuación):</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="euro">
+                    <input type="number" name="cantidad" id="cantidad" placeholder="0.00">
+                </div>
             </form>
-            <form action="#">
+            <form action="#" id="dudas">
                 <p>¿Tienes alguna duda, comentario o sugerencia? ¡Háznosla saber!</p>
                 <textarea name="mas_info" id="mas_info" cols="30" rows="10"></textarea>
-                <button>Aceptar</button>
+                <a class="link_button orange_btn">Aceptar</a>
             </form>
         </section>
     </main>
