@@ -306,6 +306,7 @@ footer :last-child {
 #home_ultimos_eventos h2 {
   background-color: #ededed;
   padding: 5px;
+  margin: 20px 0;
   margin-left: -20px;
   text-align: center;
   justify-content: center;
@@ -614,6 +615,10 @@ footer :last-child {
     font-size: 18px;
     margin: 20px;
   }
+  .orange_100_btn {
+    text-align: center;
+    margin: 20px 0px;
+  }
   /* HEADER */
   .banner_verde {
     min-height: 70px;
@@ -896,6 +901,10 @@ footer :last-child {
     background-size: cover;
   }
   /* LA TIENDA */
+  #buscador, .ofertas{
+    margin: 20px 0;
+    width: 100%;
+  }
   .oferta3 {
     display: flex;
   }
@@ -948,7 +957,7 @@ footer :last-child {
     background-image: url("/public/assets/imgs/botellatienda.jpg");
   }
   #tienda .ultimos_productos .banner_desktop {
-    margin: 20px;
+    margin: 20px 0;
     gap: 20px;
     width: auto;
     height: 400px;
