@@ -212,6 +212,7 @@ header div {
   z-index: 2;
   background-color: white;
   font-family: "Kodchasan";
+  overflow: scroll;
 }
 .nav_mobile nav {
   display: flex;
@@ -230,7 +231,7 @@ header div {
 .nav_mobile ul li a {
   font-size: 24px;
   margin: calc(100vh / 30) 0;
-  padding: calc(100vh / 70) 0;
+  padding: calc(100vh / 30) 0;
   background-color: #ededed;
 }
 .close {
