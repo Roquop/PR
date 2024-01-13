@@ -1,3 +1,5 @@
+/* Para explicar el CSS, explicaremos las normas que aparezcan por primera vez pero evitaremos repetirlas cuando ya hayan salido */
+/* Importamos las fuentes que vamos a utilizar en el proyecto */
 @font-face {
   font-family: "Inika";
   src: url("../public/assets/fonts/Inika-Regular.ttf");
@@ -23,31 +25,24 @@
   font-weight: bold;
 }
 /* GLOBAL */
+/* En esta sección aplicamos los estilos globales del proyecto. En mi caso siempre empiezo con border-box para que el ancho y alto defina la caja del elemento, y posición relativa para que los elementos por defecto se ajusten al flujo normal y así trabajar fácilmente con otras posiciones.*/
 * {
   box-sizing: border-box;
   position: relative;
 }
+/* Aplicamos la fuente global para el documento y el ancho máximo del main. Tal como está configurada la página, podriamos dejar fácilmente un margen solo con cambiar el valor en este apartado. */
 main,
 .footer_container {
   margin: 0;
   font-family: "Inika", serif;
   max-width: 1200px;
-  /* background-image: url("../public/assets/imgs/pelota_evento_uno.jpg"); */
-  /* background-repeat: no-repeat;
-  background-size: cover; */
-  /* background-position: calc(-50vw + 600px); */
 }
+/* Le quitamos el subrayado y el color por defecto a los enlaces */
 a {
   text-decoration: none;
   color: #1d1d1b;
 }
-html::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(255, 255, 255);
-}
+/* Le damos un estilo general a los títulos y a los botones, haciéndolos Flex, alineandolos en el centro por defecto, y dándole la fuente de los títulos, así como quitar el borde por defecto a los botones */
 h1,
 h2,
 h3,
@@ -60,6 +55,7 @@ h4,
   text-align: center;
   border: none;
 }
+/* A continuación aplicamos los efectos de hover, empezando aplicar a los elementos clicables el puntero de mano*/
 .link_button:hover,
 .banner_three,
 .oferta1,
@@ -68,6 +64,7 @@ h4,
 #miembro_banner {
   cursor: pointer;
 }
+/* A los siguientes elementos les damos el efecto de invertie sus colores al pasar por encima. Vemos que hay un "+" en uno de los selectores, que nos sirve para indicar que cuando se hace el hover el efecto se aplica al hermano*/
 .header_img:hover,
 .carrito:hover,
 .portada a:hover,
@@ -77,10 +74,12 @@ h4,
 .categorias_lista a:hover {
   filter: invert(100%);
 }
+/* Aquí, vemos que en uno de los selectores hemos usado el nth-child que lo que hace es seleccionar al hijo que hayamos marcado entre parentesis, y les aplicamos el fondo de color según la guía de estilo*/
 .categorias_desktop ul li:nth-child(1) a:hover,
 .categorias_lista a:hover {
   background-color: #085be9;
 }
+/* Aquí le damos el efecto al contenedor de categorías dentro tienda, determinando su ancho y una posición absoluta en relación a su contenedor, que al tener posición relativa podemos posicionarlo fácilmente con top y left*/
 #categorias_check:hover + .desplegable_categorias {
   background-color: #085be9;
   width: 100%;
@@ -89,15 +88,15 @@ h4,
   top: 0;
   left: 0;
 }
-
 #boton_identificate:hover {
   background-color: #f7a416;
 }
 #botones_dedo .link_button:hover {
   filter: invert(100%);
-  color: white;
+  color: white; /* color determina el color de la fuente*/
   background-color: #f7a416;
 }
+/* Le damos un efecto a las imágenes de la sección de blog en la página home al llevarnos a otro sitio, para dar un feedback visual de que es un elemento clicable otro que el cursor en forma de mano, usando filter, que nos permite aplicar diferentes filtros, en este caso de saturación y brillo*/
 .home_blog_img:hover {
   filter: saturate(150%);
   filter: brightness(1.2);
@@ -105,12 +104,14 @@ h4,
 #botones_dedo .link_button:hover {
   background-color: #085be9;
 }
+/* Aquí usamos border, que creara un borde alrededor del elemento, y en este caso cuando ese elemento esté en estado activo */
 #botones_dedo .link_button:active {
   border: 4px solid black;
 }
 input:hover {
   border: 2px solid #6bc9f3;
 }
+/* Aquí al declarar el background color con rgba, le estamos dando un valor de transparencia*/
 .banner:hover .sub_banner {
   background-color: rgba(237, 237, 237, 0.9);
 }
@@ -118,12 +119,16 @@ input:hover {
 .blue_btn:hover {
   border: 4px solid black;
 }
+/* Con font-weight  determinamos el peso de la fuente*/
 .orange_btn:active {
   border: none;
   color: #f7a416;
   background-color: #1d1d1b;
   font-weight: bold;
 }
+.oferta1:hover h2,
+.oferta2:hover h2,
+.oferta3:hover h2,
 .oferta1:hover div,
 .oferta2:hover div,
 .oferta3:hover div {
@@ -151,6 +156,7 @@ h3 {
 h4 {
   font-size: 20px;
 }
+/* Por defecto el body está en dirección columna , y tendrá un min-height del 100vh para que el footer esté siempre situado abajo*/
 body {
   display: flex;
   flex-direction: column;
@@ -164,11 +170,14 @@ body {
 p {
   margin: 0 16px;
 }
+/* Esto lo hemos hecho porque al comprobar la compatibilidad con otros navegadores, en el de firefox no se aplicaban los efectos de los pseudoelementos (::after y ::before) en dicho navegador, pero aplicando un primer marcado arreglamos el problema. Appearence lo ponemos por consejo del verificador de CSS para evitar warnings*/
 input[type="checkbox"] {
+  appearance: unset;
   -moz-appearance: unset;
   border: 1px solid black;
 }
 /* HEADER */
+/* Al banner le damos una posición fija, de manera que conforme bajamos en la página lo tenemos siempre arriba, y con un z-index 2, que nos permite decir que esté delante del resto de elementos (que por defecto tienen un z-index más bajo) justify content nos permite posicionar en elementos con display Flex, igual que align-items */
 .banner_verde {
   display: flex;
   position: fixed;
@@ -179,7 +188,7 @@ input[type="checkbox"] {
   justify-content: space-around;
   align-items: center;
 }
-.portada{
+.portada {
   margin-top: 50px;
 }
 .header_img {
@@ -188,6 +197,7 @@ input[type="checkbox"] {
 header li {
   font-family: "Kodchasan";
 }
+/* La declaración de esta manera nos permite definir los 4 márgenes en orden arriba, derecha, abajo, izquierda */
 #socios_btn {
   margin: 16px 0 0 0;
 }
@@ -201,9 +211,11 @@ header a {
 header div {
   display: flex;
 }
+/* Esta es la parte que hemos creado para evitar usar js, donde si el elemento checked está seleccionado, el elemento se vuelve visible */
 #menu_mobile:checked + .nav_mobile {
   visibility: visible;
 }
+/* Se le ha dado un left en referencia al ancho para que esté siempre cuadrado con el pseudoelemento que nos permitirá cerrarlo pulsandolo de nuevo*/
 #menu_mobile:checked {
   top: 30px;
   left: calc(82.5%);
@@ -211,6 +223,7 @@ header div {
   display: flex;
   position: fixed;
 }
+/* El elemento que nos permite abrir el menú, que será invisible para dar la impresión de que pulsamos directamente sobre el menú o sobre la x, con la opacidad al 0% y un z-index por encima de los otros elementos para poder pulsarlo siempre*/
 #menu_mobile {
   z-index: 3;
   opacity: 0%;
@@ -225,6 +238,7 @@ header div {
 .menu_mobile_icon {
   display: flex;
 }
+/* La visibilidad collapse hace que el elemento no esté visible por defecto, para eso hemos definido antes el checke, que le cambiará la visibilidad. También le hemos dado la propiedad de overflow con scroll ya que si hubiese una pantalla con mucho ancho y poco alto, podría suceder que el menú no se viese al completo, y esto nos permite hacer scroll en el desplegable. Aquí también hemos utilizado vh, una medida relativa abreviatura de "viewport-height" que hace referencia. También le hemos dado la posición fixed para que esté en primer plano */
 .nav_mobile {
   visibility: collapse;
   position: fixed;
@@ -243,6 +257,7 @@ header div {
   height: 100vh;
   width: 100%;
 }
+/* Con calc podemos realizar operaciones incluso relativas como en este caso */
 .nav_mobile ul {
   height: 100%;
   list-style-type: none;
@@ -252,6 +267,7 @@ header div {
 }
 .nav_mobile ul li a {
   font-size: 24px;
+  /* Cuando solo se determinan dos valores en elementos de 4, el primero incluye arriba y abajo y el siguiente izquierda y derecha */
   margin: calc(100vh / 30) 0;
   padding: calc(100vh / 30) 0;
   background-color: #ededed;
@@ -266,7 +282,6 @@ header div {
   position: absolute;
   z-index: 1;
 }
-
 /* FOOTER */
 footer {
   margin: 0;
@@ -289,10 +304,12 @@ footer {
 .footer_desktop {
   margin-bottom: 16px;
 }
+/* Con resize none evitamos que el usuario pueda redimensionar el cuadro de texto, para que no rompa el estilo. */
 textarea {
   resize: none;
 }
 /* HOME */
+/* Las imágenes las colocamos con background image y definiendo su ubicación, con size decimos el tamaño en referencia al elemento (cover hace que la imagen aumente hasta cubrir el elemento), position la situa cuando la imagen es mas grande que su contenedor, en este caso al 80% en su eje y, y no repeat es para que la imagen no se duplique hasta llenar el espacio*/
 .portada {
   font-size: 16px;
   min-height: 135px;
@@ -304,6 +321,7 @@ textarea {
   background-position-y: 80%;
   background-repeat: no-repeat;
 }
+/* Aquí usamos el pseudoelemento before, que nos permite crear como indica su nombre, un pseudoelemento detrás del elemento al que apunta. En este caso creamos un elemento del mismo tamaño con un color al 75% de opacidad que permite que la imagen se vea menos y las letras se lean mejor. */
 .portada::before {
   position: absolute;
   width: 100%;
@@ -315,15 +333,15 @@ textarea {
   opacity: 75%;
 }
 .dos_botones {
-  /* margin: 16px 16px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* gap: 16px; */
 }
+/* Combinamos un cálculo que incluye medidas relativas como el porcentaje y píxeles, de manera que nos aseguramos de que la medida sea la mitad de su contenedor como mínimo y el resto del margen lateral, con lo que quedarán centrados y del mismo tamaño. */
 .dos_botones .link_button {
   min-width: calc(50% - 32px);
 }
+/* El radio del borde nos permite curvar el borde de los elementos */
 .blue_btn {
   border-radius: 25px;
   background-color: #6bc9f3;
@@ -350,6 +368,7 @@ textarea {
   flex-direction: column;
   justify-content: center;
 }
+/* Todas estas propiedades se utilizan para limitar el número de líneas que puede enseñar un párrafo. El display webkit -box se lo damos al párrafo, decimos cuantas líneas puede tener máximo y además determinamos que en caso de haber un desbordamiento del texto (es decir, que se superen las 5 líneas en este caso) se cree una elipsis, que se mostará como 3 puntos suspensivos */
 .sub_banner_three p {
   display: -webkit-box;
   text-align: justify;
@@ -386,6 +405,13 @@ textarea {
   margin: 10px;
   text-align: left;
 }
+.titulo_mini_2 {
+  font-family: "Inika";
+  font-weight: normal;
+  font-size: 16px;
+  justify-content: left;
+  margin: 0;
+}
 .eventos_texto_banner p {
   margin: 5px 10px;
 }
@@ -415,6 +441,7 @@ textarea {
   text-align: left;
   margin: 5px 16px;
 }
+/* el gap indica el espacio que habrá entre los elementos dentro de un contenedor flex */
 #botones_dedo {
   display: flex;
   flex-direction: column;
@@ -550,11 +577,14 @@ textarea {
 #categorias_check:checked ~ .categorias_lista {
   visibility: visible;
 }
+
+/* Transform nos permite aplicar una rotación al elemento señalado, en este caso lo hacemos con la flecha desplegable de categorías, y le damos una vuelta y media entera para animarla. Sin una duración de la transición daría igual que fuesen 180 o 540 grados, pero como en la siguiente regla CSS le damos al elemento arroz_down una duración de las transiciones de medio segundo, le veremos dar una vuelta completa al aplicar y quitar el checked */
 #categorias_check:checked ~ .arrow_down {
-  transform: rotate(180deg);
+  transform: rotate(540deg);
 }
 .arrow_down {
   margin-left: auto;
+  transition-duration: 0.5s;
 }
 /* TIENDA OFERTAS */
 .ofertas {
@@ -582,6 +612,11 @@ textarea {
 .texto_oferta,
 .precio_oferta {
   background-color: rgba(237, 237, 237, 0.75);
+}
+.texto_oferta {
+  margin: 0;
+  justify-content: center;
+  font-family: "Inika", sans-serif;
 }
 .precio_oferta {
   display: flex;
@@ -642,8 +677,8 @@ textarea {
 #ventajas h2 {
   margin: 16px;
 }
-#ventajas h1{
-  margin-top:65px
+#ventajas h1 {
+  margin-top: 65px;
 }
 #ventajas h2 {
   justify-content: center;
@@ -793,6 +828,7 @@ textarea {
   bottom: 10px;
   right: 0;
 }
+/* Con "content" creamos contenido mediante CSS, que solo aporta información decorativa */
 .euro::after {
   content: "€";
   position: absolute;
@@ -932,26 +968,32 @@ textarea {
   margin: 40px 0;
 }
 /* FIN DE LA PARTE MOVIL */
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /* COMIENZO PARTE DESKTOP */
+/* Después de haber declarado todo el contenido móvil, declaramos display:none para os elementos que tienen la clases desktop_show para que no se vean, y hacemos hincapié en hacerlo con el id de tienda porque había una declaración con identificador que si no lo sobreescribiría */
 .desktop_show,
 #tienda .desktop_show {
   display: none;
 }
+/* Aquí hacemos la media query, que nos dice que en el momento en que el contenedor central sobrepase los 1200px, se calculará un margen que tendrá en cuenta el ancho del contenedor y el de la pantalla para centrarlo siempre (el margen será la mitad de la pantalla + la mitad del ancho del contenedor, haciendo que este siempre esté en el centro) */
 @media (min-width: 1200px) {
   main,
   .footer_container {
     margin-left: calc(50vw - 600px);
   }
 }
+/* Esta media query es para todo lo referente a la vista desktop, que se aplicará a partir de los 768px */
 /* GLOBAL DESKTOP */
 @media (min-width: 768px) {
+  /* ocultamos la vista del menú móvil */
   .nav_mobile {
     display: none;
   }
+  /* Mostramos los elementos con la clase desktop show */
   .desktop_show {
     display: block;
   }
+  /* Como antes, definimos los estilos generales de los componentes en global, simplemente que ahora se definen a partir del tamaño de pantalla determinado en la media query*/
   h1,
   h2,
   h3,
@@ -1102,10 +1144,9 @@ textarea {
     font-size: 16px;
   }
   .banner_three h4 {
-    font-size: 24px;
-    font-family: "Kodchasan";
+    font-size: 18px;
+    font-family: "Inika";
     text-align: left;
-    margin: 0 10px;
   }
   .sub_banner_three {
     width: 50%;
@@ -1366,9 +1407,9 @@ textarea {
   }
   /* SOCIOS */
   /* DATOS PERSONALES, DISPONIBILIDAD, DATOS DE CONTACTO */
-#ventajas h1{
-  margin-top:20px
-}
+  #ventajas h1 {
+    margin-top: 20px;
+  }
   .desktop_3_form {
     display: flex;
     height: 450px;

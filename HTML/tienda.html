@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- El header es igual que el de índex salvo por no presentar el mensaje de bienvenida con la foto de fondo -->
     <header>
         <div class="banner_verde">
             <a title="enlace a home" href="index.html">
@@ -66,17 +67,19 @@
         </div>
     </header>
     <main id="tienda">
+        <!-- Aquí creamos la barra de búsqueda con la imagen de la misma con un input que no tiene label por tener placeholder igual de significativo, una id y su tipo. -->
         <div class="busqueda">
             <input placeholder="Busca aquí tu producto..." id="buscador" type="text" class="text">
             <a title="buscar (work in progress)" href="#">
                 <img id="lupa" src="../public/assets/icons/Search.svg" alt="lupa">
             </a>
         </div>
+        <!-- Y este es el menú desplegable de categorías para móvil, donde con un input tipo checkbox superpuesto  al elemento conseguimos un comportamiento para poner y quitar clases en css sin necesidad de javascript -->
         <div class="categorias desktop_hide">
             <input type="checkbox" name="categorias_check" id="categorias_check">
             <div class="desplegable_categorias">CATEGORÍAS</div>
             <img class="arrow_down" src="../public/assets/icons/SortDown.svg" alt="">
-            <div class="categorias_lista">
+            <nav class="categorias_lista">
                 <ul>
                     <li><a title="enlace a ofertas (work in progress)" href="#">OFERTAS</a></li>
                     <li><a title="enlace a categoria tenis (work in progress)" href="#">TENIS</a></li>
@@ -87,9 +90,10 @@
                     <li><a title="enlace a categoria accesorios y complementos (work in progress)" href="#">ACCESORIOS Y
                             COMPLEMENTOS</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <div class="desktop_show categorias_desktop">
+        <!-- Esta es la barra de navegación entre categorías del menú desktop -->
+        <nav class="desktop_show categorias_desktop">
             <ul>
                 <li><a title="enlace a categoria ofertas (work in progress) " href="#">OFERTAS</a></li>
                 <li><a title="enlace a categoria tenis (work in progress)" href="#">TENIS</a></li>
@@ -100,36 +104,38 @@
                 <li><a title="enlace a categoria accesorios y complementos (work in progress)" href="#">ACCESORIOS Y
                         COMPLEMENTOS</a></li>
             </ul>
-        </div>
-        <div class="ofertas">
+        </nav>
+        <!-- Aquí creamos la sección con las 3 ofertas, donde un elemento tendrá la clase desktop_show para verse solo en modo desktop -->
+        <section class="ofertas">
             <a title="enlace a oferta (work in progress)" href="#" class="oferta1">
-                <div class="texto_oferta">¡Oferta!</div>
+                <h2 class="texto_oferta">¡Oferta!</h2>
                 <div class="precio_oferta">
                     <p>88€</p>
                     <p>25€</p>
                 </div>
             </a>
             <a title="enlace a oferta (work in progress)" href="#" class="oferta2">
-                <div class="texto_oferta">¡Oferta!</div>
+                <h2 class="texto_oferta">¡Oferta!</h2>
                 <div class="precio_oferta">
                     <p>55€</p>
                     <p>20€</p>
                 </div>
             </a>
             <a title="enlace a oferta (work in progress)" href="#" class="oferta3 desktop_show">
-                <div class="texto_oferta">¡Oferta!</div>
+                <h2 class="texto_oferta">¡Oferta!</h2>
                 <div class="precio_oferta">
                     <p>15€</p>
                     <p>5€</p>
                 </div>
             </a>
-        </div>
+        </section>
+        <!-- En la sección últimos productos hacemos lo mismo, un desktop_show para un elemento para que no se muestre en la vista móvil. -->
         <section class="ultimos_productos">
             <h2>Últimos Productos</h2>
             <div class="banner_desktop">
                 <a title="enlace a producto (work in progress)" href="#" class="banner banner_three">
                     <h4 class="encabezado_tienda desktop_hide">Pack: 3 Pelotas</h4>
-                    <div class="sub_banner sub_banner_three">
+                    <article class="sub_banner sub_banner_three">
                         <h4 class="titulo_mini desktop_show">Pack de 3 pelotas</h4>
                         <p>8€</p>
                         <p class="desktop_hide">Pack de 3 pelotas</p>
@@ -139,11 +145,11 @@
                             se lesionó y quiere venderlas antes de dejar que se malogren y así saber que alguien las
                             disfrutará en su lugar.
                         </p>
-                    </div>
+                    </article>
                 </a>
                 <a title="enlace a producto (work in progress)" href="#" class="banner banner_three">
                     <h4 class="encabezado_tienda desktop_hide">Pala de Pádel</h4>
-                    <div class="sub_banner sub_banner_three">
+                    <article class="sub_banner sub_banner_three">
                         <h4 class="titulo_mini desktop_show">Pala Pro de Padel</h4>
                         <p>45€</p>
                         <p class="desktop_hide">Pala pro de Padel</p>
@@ -152,11 +158,11 @@
                             durante medio año por un
                             jugador, cambiada porque le han regalado una pala superior que se corresponde a su
                             categoría, así que no dejes pasar este ofertón, ¡no pasan a menudo!</p>
-                    </div>
+                    </article>
                 </a>
                 <a title="enlace a producto (work in progress)" href="#" class="banner banner_three desktop_show">
                     <h4 class="encabezado_tienda desktop_hide">Camiseta Blanca</h4>
-                    <div class="sub_banner sub_banner_three">
+                    <article class="sub_banner sub_banner_three">
                         <h4 class="titulo_mini desktop_show">Camiseta blanca</h4>
                         <p>5€</p>
                         <p class="desktop_hide">Camiseta blanca</p>
@@ -166,29 +172,31 @@
                             propietario de la camiseta ha decidido venderla para favorecer a la asociación en vez de
                             devolverla a la tienda ¡gracias por tu trabajo!
                         </p>
-                    </div>
+                    </article>
                 </a>
             </div>
         </section>
+        <!-- Como en la home, una sección para el botón de vender en este caso. -->
         <div class="orange_100_btn">
             <a title="enlace a vende tu producto (work in progress)" href="#" class="link_button orange_btn">¡Vende tu
                 producto!</a>
         </div>
     </main>
+    <!-- El footer común -->
     <footer>
         <div class="footer_container">
             <div id="links">
-                <a title="enlace a Youtube (work in progress)" href="#"> <img src="../public/assets/icons/YouTube.png"
-                        alt="logotipo de Youtube">
+                <a title="enlace a Youtube (work in progress)" href="#">
+                    <img src="../public/assets/icons/YouTube.png" alt="logotipo de Youtube">
                 </a>
-                <a title="enlace a Instagram (work in progress)" href="#"> <img
-                        src="../public/assets/icons/Instagram.png" alt="logotipo de Instagram">
+                <a title="enlace a Instagram (work in progress)" href="#">
+                    <img src="../public/assets/icons/Instagram.png" alt="logotipo de Instagram">
                 </a>
-                <a title="enlace a TwitterX (work in progress)" href="#"> <img src="../public/assets/icons/TwitterX.png"
-                        alt="logotipo de TwitterX">
+                <a title="enlace a TwitterX (work in progress)" href="#">
+                    <img src="../public/assets/icons/TwitterX.png" alt="logotipo de TwitterX">
                 </a>
-                <a title="enlace a Facebook (work in progress)" href="#"> <img src="../public/assets/icons/Facebook.png"
-                        alt="logotipo de Facebook">
+                <a title="enlace a Facebook (work in progress)" href="#">
+                    <img src="../public/assets/icons/Facebook.png" alt="logotipo de Facebook">
                 </a>
             </div>
             <div class="footer_desktop">

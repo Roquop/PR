@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- El header igual que en tienda, sin mensaje de bienvenida en la vista móvil -->
     <header>
         <div class="banner_verde">
             <a title="enlace a home" href="index.html">
@@ -66,9 +67,10 @@
         </div>
     </header>
     <main id="socios">
+        <!-- Una sección sencilla con <p> y <ul> que posee solo texto, y la clase cuadro_verde para darle estilo en CSS -->
         <section id="ventajas">
             <h1>¡BIENVENIDO A TU CLUB!</h1>
-            <section class="ventajas_socio cuadro_verde">
+            <article class="ventajas_socio cuadro_verde">
                 <h2>Ventajas de ser socio</h2>
                 <p>
                     Como Socio del club deportivo EivissaPadel disfrutarás de una serie de ventajas exclusivas de
@@ -98,10 +100,11 @@
                     de
                     un estilo de vida activo.
                 </p>
-            </section>
+            </article>
             <a title="enlace al club" href="club.html" class="blue_btn link_button">Quiero saber más sobre el
                 club</a>
         </section>
+        <!-- En esta sección empiezan los formularios. En este caso hemos hecho diversos formularios en vez de uno solo con varios fieldsets ya que más adelante se podrían desarrollar los mismos para separar sus funciones y poder, por ejemplo, hacer donaciones anónimas, contactar, cambiar la disponibilidad siendo miembro... y reutilizar los mismos en general.-->
         <section id="inscripcion">
             <h2>Inscripción al club</h2>
             <p>
@@ -109,15 +112,17 @@
                 sesión como miembro de pleno derecho así como adaptar tu participación en el club en la medida que lo
                 desees, ¡bienvenido!
             </p>
-            <div class="desktop_3_form">
+            <!-- Los input tienen asociado un label con la información sobre el mismo, los for están correctamente referenciados y todos los input tienen name e ID para poder implantar un formulario real facilmente -->
+            <article class="desktop_3_form">
                 <form action="#" id="datos_personales">
                     <h3>Datos personales</h3>
                     <label for="name">Nombre y Apellidos</label>
-                    <input type="text" name="name_and_surname" id="name">
+                    <input type="text" name="name_and_surname" id="name" placeholder="Rafael Nadal">
                     <label for="postal">Dirección Postal</label>
-                    <input type="text" name="postal_adress" id="postal">
+                    <input type="text" name="postal_adress" id="postal" placeholder="70087 Mallorca C/ del ganador">
                     <label for="birth_date">Fecha de Nacimiento</label>
                     <input type="date" name="birth_date" id="birth_date">
+                    <!-- El tipo de input está adaptado al tipo de valor que contiene, text para texto, date para fechas, number para numeros... -->
                 </form>
                 <form action="#" id="disponibilidad" class="cuadro_verde">
                     <h3>Disponibilidad</h3>
@@ -141,14 +146,15 @@
                             </div>
                         </div>
                     </div>
-                    <textarea name="otros" id="otros" cols="30" rows="10"></textarea>
+                    <textarea name="otros" id="otros" cols="30" rows="10"
+                        placeholder="Estoy disponible los lunes y jueves por las tardes una semana sí una no"></textarea>
                 </form>
                 <form action="#" id="datos_de_contacto">
                     <h3>Datos de Contacto</h3>
                     <label for="phone">Teléfono</label>
-                    <input type="text" name="phone" id="phone">
+                    <input type="text" name="phone" id="phone" required placeholder="971396338">
                     <label for="email">Correo Electrónico</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" required placeholder="rafa_nadal@campeondelmundo.com">
                     <div><input type="checkbox" name="check_email" id="check_email">
                         <label for="check_email">Prefiero comunicarme principalmente por correo</label>
                     </div>
@@ -156,7 +162,7 @@
                         <label for="check_phone">Prefiero comunicarme principalmente por teléfono</label>
                     </div>
                 </form>
-            </div>
+            </article>
             <form action="#" id="contribucion">
                 <h3>Contribución</h3>
                 <p>Con tan solo 10 € al mes nuestro club puede seguir evolucionando y autoabasteciéndose para la gestión
@@ -188,24 +194,27 @@
             <form action="#" id="dudas">
                 <p>¿Tienes alguna duda, comentario o sugerencia? ¡Háznosla saber!</p>
                 <textarea name="mas_info" id="mas_info" cols="30" rows="10"></textarea>
-                <a title="boton para aceptar el formulario" href="#" class="link_button orange_btn">Aceptar</a>
+                <!-- En este caso, hemos linkeado el botón al formulario de datos de contacto simplemente para ver como se vería un campo required sin rellenar, pero en el prototipo real podríamos unirlo a todos mediante javascript -->
+                <button type="submit" form="datos_de_contacto" title="boton para aceptar el formulario"
+                    class="link_button orange_btn">Aceptar</button>
             </form>
         </section>
     </main>
+    <!-- El footer común -->
     <footer>
         <div class="footer_container">
             <div id="links">
-                <a title="enlace a Youtube (work in progress)" href="#"> <img src="../public/assets/icons/YouTube.png"
-                        alt="logotipo de Youtube">
+                <a title="enlace a Youtube (work in progress)" href="#">
+                    <img src="../public/assets/icons/YouTube.png" alt="logotipo de Youtube">
                 </a>
-                <a title="enlace a Instagram (work in progress)" href="#"> <img
-                        src="../public/assets/icons/Instagram.png" alt="logotipo de Instagram">
+                <a title="enlace a Instagram (work in progress)" href="#">
+                    <img src="../public/assets/icons/Instagram.png" alt="logotipo de Instagram">
                 </a>
-                <a title="enlace a TwitterX (work in progress)" href="#"> <img src="../public/assets/icons/TwitterX.png"
-                        alt="logotipo de TwitterX">
+                <a title="enlace a TwitterX (work in progress)" href="#">
+                    <img src="../public/assets/icons/TwitterX.png" alt="logotipo de TwitterX">
                 </a>
-                <a title="enlace a Facebook (work in progress)" href="#"> <img src="../public/assets/icons/Facebook.png"
-                        alt="logotipo de Facebook">
+                <a title="enlace a Facebook (work in progress)" href="#">
+                    <img src="../public/assets/icons/Facebook.png" alt="logotipo de Facebook">
                 </a>
             </div>
             <div class="footer_desktop">
