@@ -164,17 +164,23 @@ body {
 p {
   margin: 0 16px;
 }
-input[type=checkbox] {
-  -moz-appearance:unset; 
+input[type="checkbox"] {
+  -moz-appearance: unset;
   border: 1px solid black;
 }
 /* HEADER */
 .banner_verde {
   display: flex;
+  position: fixed;
   height: 50px;
+  width: 100%;
+  z-index: 1;
   background-color: #00ad6e;
   justify-content: space-around;
   align-items: center;
+}
+.portada {
+  margin-top: 50px;
 }
 .header_img {
   height: 50px;
