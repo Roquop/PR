@@ -177,6 +177,25 @@ input[type="checkbox"] {
   border: 1px solid black;
 }
 /* HEADER */
+/* Para que el skip link solo aparezca al hacerle focus, lo colocamos fuera de la vista con el translate-y de transform, y al hacerle focus hacemos que vuelva a aparecer */
+.skip-link {
+  background: #1d1d1b;
+  color: #fff;
+  font-weight: 700;
+  top: 0;
+  margin: 0;
+  left: calc(50vw - 124px);
+  font-family: "Kodchasan", sans-serif;
+  font-size: 26px;
+  padding: 20px;
+  position: absolute;
+  transform: translateY(-100%);
+  z-index: 3;
+  transition-duration: 1s;
+}
+.skip-link:focus {
+  transform: translateY(100%);
+}
 /* Al banner le damos una posición fija, de manera que conforme bajamos en la página lo tenemos siempre arriba, y con un z-index 2, que nos permite decir que esté delante del resto de elementos (que por defecto tienen un z-index más bajo) justify content nos permite posicionar en elementos con display Flex, igual que align-items */
 .banner_verde {
   display: flex;

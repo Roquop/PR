@@ -13,6 +13,8 @@
 <body>
     <!-- En el header hemos creado la clase banner verde que será la parte superior de la página, con imágenes que funcionan como enlace y con la clase desktop_hide para que esos elementos no se vean en resoluciones de +1200px (como el menú de hamburguesa) y desktop_show cuando queremos que se esconda en la vista móvil y se vea en la desktop (como el menú de navegación horizontal) Todas las imágenes tienen definido su alt y su title por motivos de accesibilidad. Para los menús de navegación se han utilizado los elementos <nav> y <ul> por motivos de correcta semántica.-->
     <header>
+        <!-- Todas las secciones tendrán un skip to content, un enlace que sirve para ir directamente al contenido de la página sin tener que pasar por todas las opciones del menú de navegación ni el header, para facilitarle la vida a la gente que necesita facilidades de accesibilidad -->
+        <a class="skip-link" title="Salta al contenido principal" href='#home'>Salta al contenido</a>
         <div class="banner_verde">
             <a title="enlace a home" href="index.html">
                 <img class="header_img" src="../public/assets/imgs/logotipo_negro.svg" alt="logotipo de EivissaPadel">
