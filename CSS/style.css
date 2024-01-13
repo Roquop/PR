@@ -164,6 +164,10 @@ body {
 p {
   margin: 0 16px;
 }
+input[type=checkbox] {
+  -moz-appearance:unset; 
+  border: 1px solid black;
+}
 /* HEADER */
 .banner_verde {
   display: flex;
@@ -735,7 +739,7 @@ textarea {
   top: 0;
   left: 0;
   z-index: 1;
-  border: 1px solid black;
+  border: none;
 }
 /* DATOS DE CONTACTO */
 #datos_de_contacto,
