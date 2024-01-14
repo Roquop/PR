@@ -390,7 +390,6 @@ textarea {
 /* Todas estas propiedades se utilizan para limitar el número de líneas que puede enseñar un párrafo. El display webkit -box se lo damos al párrafo, decimos cuantas líneas puede tener máximo y además determinamos que en caso de haber un desbordamiento del texto (es decir, que se superen las 5 líneas en este caso) se cree una elipsis, que se mostará como 3 puntos suspensivos */
 .sub_banner_three p {
   display: -webkit-box;
-  text-align: justify;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
@@ -410,7 +409,6 @@ textarea {
   justify-content: center;
 }
 #home_ultimos_eventos > p {
-  text-align: justify;
   margin: 16px;
 }
 .eventos_banner {
@@ -1175,7 +1173,6 @@ textarea {
   }
   .sub_banner_three p {
     display: -webkit-box;
-    text-align: justify;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -1414,7 +1411,6 @@ textarea {
   }
   #tienda .sub_banner_three p {
     display: -webkit-box;
-    text-align: justify;
     -webkit-line-clamp: 8;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
@@ -1496,9 +1492,6 @@ textarea {
     margin-bottom: -45px;
   }
   /* EL CLUB */
-  #club p {
-    text-align: justify;
-  }
   .portada_club {
     background-image: url("../public/assets/imgs/fondo_padel.jpg");
   }
